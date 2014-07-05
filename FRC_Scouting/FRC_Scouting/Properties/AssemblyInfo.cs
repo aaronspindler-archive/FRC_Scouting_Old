@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("FRC_Scouting")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("A First Robotics scouting application that has built in reporting and statistics.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("xNovax @ FRC 3710")]
 [assembly: AssemblyProduct("FRC_Scouting")]
-[assembly: AssemblyCopyright("Copyright ©  2014")]
+[assembly: AssemblyCopyright("GPL V3")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
