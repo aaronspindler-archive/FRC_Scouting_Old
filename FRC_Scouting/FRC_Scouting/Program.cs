@@ -16,7 +16,7 @@ namespace FRC_Scouting
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Home());
+            Application.Run(new WhichYear());
         }
     }
 }

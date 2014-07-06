@@ -47,16 +47,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Home.cs">
+    <Compile Include="Home_2014.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Home.Designer.cs">
-      <DependentUpon>Home.cs</DependentUpon>
+    <Compile Include="Home_2014.Designer.cs">
+      <DependentUpon>Home_2014.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Home.resx">
-      <DependentUpon>Home.cs</DependentUpon>
+    <Compile Include="UsefulSnippets.cs" />
+    <Compile Include="WhichYear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WhichYear.Designer.cs">
+      <DependentUpon>WhichYear.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Home_2014.resx">
+      <DependentUpon>Home_2014.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -67,6 +74,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="WhichYear.resx">
+      <DependentUpon>WhichYear.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

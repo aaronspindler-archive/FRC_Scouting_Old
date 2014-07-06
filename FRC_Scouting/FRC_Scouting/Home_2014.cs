@@ -3,9 +3,9 @@ using System.Windows.Forms;
 
 namespace FRC_Scouting
 {
-    public partial class Home : Form
+    public partial class Home_2014 : Form
     {
-        public Home()
+        public Home_2014()
         {
             InitializeComponent();
         }
