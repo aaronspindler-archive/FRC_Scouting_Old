@@ -30,6 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WhichYear));
             this.tableLayout = new System.Windows.Forms.TableLayoutPanel();
+            this.whichYearInformationLabel = new System.Windows.Forms.Label();
+            this.whichYearComboBox = new System.Windows.Forms.ComboBox();
+            this.confirmSelectionButton = new System.Windows.Forms.Button();
+            this.menuStrip = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tableLayout.SuspendLayout();
+            this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayout
@@ -43,30 +52,109 @@
             this.tableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayout.Controls.Add(this.whichYearComboBox, 0, 2);
+            this.tableLayout.Controls.Add(this.whichYearInformationLabel, 0, 1);
+            this.tableLayout.Controls.Add(this.confirmSelectionButton, 2, 3);
+            this.tableLayout.Controls.Add(this.menuStrip, 0, 0);
             this.tableLayout.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayout.Location = new System.Drawing.Point(0, 0);
             this.tableLayout.Name = "tableLayout";
-            this.tableLayout.RowCount = 8;
-            this.tableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayout.Size = new System.Drawing.Size(716, 458);
+            this.tableLayout.RowCount = 4;
+            this.tableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayout.Size = new System.Drawing.Size(787, 184);
             this.tableLayout.TabIndex = 0;
+            // 
+            // whichYearInformationLabel
+            // 
+            this.whichYearInformationLabel.AutoSize = true;
+            this.tableLayout.SetColumnSpan(this.whichYearInformationLabel, 8);
+            this.whichYearInformationLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.whichYearInformationLabel.Location = new System.Drawing.Point(3, 46);
+            this.whichYearInformationLabel.Name = "whichYearInformationLabel";
+            this.whichYearInformationLabel.Size = new System.Drawing.Size(781, 46);
+            this.whichYearInformationLabel.TabIndex = 1;
+            this.whichYearInformationLabel.Text = "Use this form to select which years scouting application you would like to open.\r" +
+    "\n";
+            this.whichYearInformationLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // whichYearComboBox
+            // 
+            this.tableLayout.SetColumnSpan(this.whichYearComboBox, 8);
+            this.whichYearComboBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.whichYearComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.whichYearComboBox.FormattingEnabled = true;
+            this.whichYearComboBox.Location = new System.Drawing.Point(3, 95);
+            this.whichYearComboBox.Name = "whichYearComboBox";
+            this.whichYearComboBox.Size = new System.Drawing.Size(781, 33);
+            this.whichYearComboBox.TabIndex = 1;
+            this.whichYearComboBox.SelectedIndexChanged += new System.EventHandler(this.whichYearComboBox_SelectedIndexChanged);
+            // 
+            // confirmSelectionButton
+            // 
+            this.tableLayout.SetColumnSpan(this.confirmSelectionButton, 4);
+            this.confirmSelectionButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.confirmSelectionButton.Location = new System.Drawing.Point(199, 141);
+            this.confirmSelectionButton.Name = "confirmSelectionButton";
+            this.confirmSelectionButton.Size = new System.Drawing.Size(386, 40);
+            this.confirmSelectionButton.TabIndex = 2;
+            this.confirmSelectionButton.Text = "Confirm Selection";
+            this.confirmSelectionButton.UseVisualStyleBackColor = true;
+            this.confirmSelectionButton.Click += new System.EventHandler(this.confirmSelectionButton_Click);
+            // 
+            // menuStrip
+            // 
+            this.tableLayout.SetColumnSpan(this.menuStrip, 8);
+            this.menuStrip.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.menuStrip.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
+            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem,
+            this.settingsToolStripMenuItem});
+            this.menuStrip.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip.Name = "menuStrip";
+            this.menuStrip.Size = new System.Drawing.Size(787, 46);
+            this.menuStrip.TabIndex = 3;
+            this.menuStrip.Text = "menuStrip1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.exitToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(64, 42);
+            this.fileToolStripMenuItem.Text = "File";
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(244, 36);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // settingsToolStripMenuItem
+            // 
+            this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(113, 42);
+            this.settingsToolStripMenuItem.Text = "Settings";
             // 
             // WhichYear
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(716, 458);
+            this.ClientSize = new System.Drawing.Size(787, 184);
             this.Controls.Add(this.tableLayout);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MainMenuStrip = this.menuStrip;
             this.Name = "WhichYear";
             this.Text = "Which Year\'s Scouting?";
+            this.Load += new System.EventHandler(this.WhichYear_Load);
+            this.tableLayout.ResumeLayout(false);
+            this.tableLayout.PerformLayout();
+            this.menuStrip.ResumeLayout(false);
+            this.menuStrip.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -74,5 +162,12 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayout;
+        private System.Windows.Forms.Label whichYearInformationLabel;
+        private System.Windows.Forms.ComboBox whichYearComboBox;
+        private System.Windows.Forms.Button confirmSelectionButton;
+        private System.Windows.Forms.MenuStrip menuStrip;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
     }
 }
