@@ -52,6 +52,7 @@
             this.licenseDisplay.Dock = System.Windows.Forms.DockStyle.Fill;
             this.licenseDisplay.Location = new System.Drawing.Point(0, 0);
             this.licenseDisplay.Name = "licenseDisplay";
+            this.licenseDisplay.ReadOnly = true;
             this.licenseDisplay.Size = new System.Drawing.Size(760, 558);
             this.licenseDisplay.TabIndex = 1;
             this.licenseDisplay.Text = resources.GetString("licenseDisplay.Text");
