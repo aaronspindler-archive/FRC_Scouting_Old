@@ -97,6 +97,7 @@ namespace FRC_Scouting
         {
             FRC_Scouting.Properties.Settings.Default.Reset();
             FRC_Scouting.Properties.Settings.Default.Save();
+            MessageBox.Show("You have successfully reset all settings!", "Settings have been cleared!", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

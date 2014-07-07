@@ -44,7 +44,7 @@
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 558F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(760, 558);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(747, 558);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // licenseDisplay
@@ -53,7 +53,7 @@
             this.licenseDisplay.Location = new System.Drawing.Point(0, 0);
             this.licenseDisplay.Name = "licenseDisplay";
             this.licenseDisplay.ReadOnly = true;
-            this.licenseDisplay.Size = new System.Drawing.Size(760, 558);
+            this.licenseDisplay.Size = new System.Drawing.Size(747, 558);
             this.licenseDisplay.TabIndex = 1;
             this.licenseDisplay.Text = resources.GetString("licenseDisplay.Text");
             // 
@@ -61,7 +61,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(760, 558);
+            this.ClientSize = new System.Drawing.Size(747, 558);
             this.Controls.Add(this.licenseDisplay);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
