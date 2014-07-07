@@ -92,5 +92,11 @@ namespace FRC_Scouting
             }
             return passwordToString;
         }
+
+        public void ClearSettings()
+        {
+            FRC_Scouting.Properties.Settings.Default.Reset();
+            FRC_Scouting.Properties.Settings.Default.Save();
+        }
     }
 }

@@ -30,13 +30,19 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainSettings));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.clearAllSettingsLabel = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clearAllSettingsButton = new System.Windows.Forms.Button();
+            this.tabControl = new System.Windows.Forms.TabControl();
+            this.generalSettingsTab = new System.Windows.Forms.TabPage();
+            this.dataBaseSettingsTab = new System.Windows.Forms.TabPage();
+            this.generalSettingsTableLayout = new System.Windows.Forms.TableLayoutPanel();
+            this.databaseSettingsTableLayout = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            this.tabControl.SuspendLayout();
+            this.generalSettingsTab.SuspendLayout();
+            this.dataBaseSettingsTab.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -50,9 +56,8 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel1.Controls.Add(this.clearAllSettingsLabel, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.menuStrip1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.clearAllSettingsButton, 6, 1);
+            this.tableLayoutPanel1.Controls.Add(this.tabControl, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -68,18 +73,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(677, 441);
             this.tableLayoutPanel1.TabIndex = 0;
-            // 
-            // clearAllSettingsLabel
-            // 
-            this.clearAllSettingsLabel.AutoSize = true;
-            this.tableLayoutPanel1.SetColumnSpan(this.clearAllSettingsLabel, 6);
-            this.clearAllSettingsLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.clearAllSettingsLabel.Location = new System.Drawing.Point(3, 50);
-            this.clearAllSettingsLabel.Name = "clearAllSettingsLabel";
-            this.clearAllSettingsLabel.Size = new System.Drawing.Size(498, 48);
-            this.clearAllSettingsLabel.TabIndex = 1;
-            this.clearAllSettingsLabel.Text = "Clear all Settings: ";
-            this.clearAllSettingsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // menuStrip1
             // 
@@ -108,17 +101,68 @@
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
-            // clearAllSettingsButton
+            // tabControl
             // 
-            this.tableLayoutPanel1.SetColumnSpan(this.clearAllSettingsButton, 2);
-            this.clearAllSettingsButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.clearAllSettingsButton.Location = new System.Drawing.Point(507, 53);
-            this.clearAllSettingsButton.Name = "clearAllSettingsButton";
-            this.clearAllSettingsButton.Size = new System.Drawing.Size(167, 42);
-            this.clearAllSettingsButton.TabIndex = 2;
-            this.clearAllSettingsButton.Text = "Clear Settings";
-            this.clearAllSettingsButton.UseVisualStyleBackColor = true;
-            this.clearAllSettingsButton.Click += new System.EventHandler(this.clearAllSettingsButton_Click);
+            this.tableLayoutPanel1.SetColumnSpan(this.tabControl, 8);
+            this.tabControl.Controls.Add(this.generalSettingsTab);
+            this.tabControl.Controls.Add(this.dataBaseSettingsTab);
+            this.tabControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl.Location = new System.Drawing.Point(3, 53);
+            this.tabControl.Name = "tabControl";
+            this.tableLayoutPanel1.SetRowSpan(this.tabControl, 8);
+            this.tabControl.SelectedIndex = 0;
+            this.tabControl.Size = new System.Drawing.Size(671, 385);
+            this.tabControl.TabIndex = 1;
+            // 
+            // generalSettingsTab
+            // 
+            this.generalSettingsTab.Controls.Add(this.generalSettingsTableLayout);
+            this.generalSettingsTab.Location = new System.Drawing.Point(4, 34);
+            this.generalSettingsTab.Name = "generalSettingsTab";
+            this.generalSettingsTab.Padding = new System.Windows.Forms.Padding(3);
+            this.generalSettingsTab.Size = new System.Drawing.Size(663, 347);
+            this.generalSettingsTab.TabIndex = 0;
+            this.generalSettingsTab.Text = "Ganeral Settings";
+            this.generalSettingsTab.UseVisualStyleBackColor = true;
+            // 
+            // dataBaseSettingsTab
+            // 
+            this.dataBaseSettingsTab.Controls.Add(this.databaseSettingsTableLayout);
+            this.dataBaseSettingsTab.Location = new System.Drawing.Point(4, 34);
+            this.dataBaseSettingsTab.Name = "dataBaseSettingsTab";
+            this.dataBaseSettingsTab.Padding = new System.Windows.Forms.Padding(3);
+            this.dataBaseSettingsTab.Size = new System.Drawing.Size(663, 347);
+            this.dataBaseSettingsTab.TabIndex = 1;
+            this.dataBaseSettingsTab.Text = "Database Settings";
+            this.dataBaseSettingsTab.UseVisualStyleBackColor = true;
+            // 
+            // generalSettingsTableLayout
+            // 
+            this.generalSettingsTableLayout.ColumnCount = 2;
+            this.generalSettingsTableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.generalSettingsTableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.generalSettingsTableLayout.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.generalSettingsTableLayout.Location = new System.Drawing.Point(3, 3);
+            this.generalSettingsTableLayout.Name = "generalSettingsTableLayout";
+            this.generalSettingsTableLayout.RowCount = 2;
+            this.generalSettingsTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.generalSettingsTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.generalSettingsTableLayout.Size = new System.Drawing.Size(657, 341);
+            this.generalSettingsTableLayout.TabIndex = 0;
+            // 
+            // databaseSettingsTableLayout
+            // 
+            this.databaseSettingsTableLayout.ColumnCount = 2;
+            this.databaseSettingsTableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.databaseSettingsTableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.databaseSettingsTableLayout.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.databaseSettingsTableLayout.Location = new System.Drawing.Point(3, 3);
+            this.databaseSettingsTableLayout.Name = "databaseSettingsTableLayout";
+            this.databaseSettingsTableLayout.RowCount = 2;
+            this.databaseSettingsTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.databaseSettingsTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.databaseSettingsTableLayout.Size = new System.Drawing.Size(657, 341);
+            this.databaseSettingsTableLayout.TabIndex = 0;
             // 
             // MainSettings
             // 
@@ -134,6 +178,9 @@
             this.tableLayoutPanel1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.tabControl.ResumeLayout(false);
+            this.generalSettingsTab.ResumeLayout(false);
+            this.dataBaseSettingsTab.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -144,7 +191,10 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
-        private System.Windows.Forms.Label clearAllSettingsLabel;
-        private System.Windows.Forms.Button clearAllSettingsButton;
+        private System.Windows.Forms.TabControl tabControl;
+        private System.Windows.Forms.TabPage generalSettingsTab;
+        private System.Windows.Forms.TabPage dataBaseSettingsTab;
+        private System.Windows.Forms.TableLayoutPanel generalSettingsTableLayout;
+        private System.Windows.Forms.TableLayoutPanel databaseSettingsTableLayout;
     }
 }

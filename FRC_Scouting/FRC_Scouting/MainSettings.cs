@@ -10,6 +10,9 @@ namespace FRC_Scouting
             InitializeComponent();
         }
 
+        //Variables
+        UsefulSnippets us = new UsefulSnippets();
+
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -17,8 +20,7 @@ namespace FRC_Scouting
 
         private void clearAllSettingsButton_Click(object sender, EventArgs e)
         {
-            FRC_Scouting.Properties.Settings.Default.Reset();
-            FRC_Scouting.Properties.Settings.Default.Save();
+            us.ClearSettings();
         }
     }
 }
