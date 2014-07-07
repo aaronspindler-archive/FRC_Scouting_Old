@@ -78,5 +78,11 @@ namespace FRC_Scouting
             var pi = new ProgramInformation();
             pi.Show();
         }
+
+        private void licenseInformationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var li = new LicenseInformation();
+            li.Show();
+        }
     }
 }

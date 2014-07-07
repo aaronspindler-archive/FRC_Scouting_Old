@@ -38,6 +38,7 @@
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.programInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.licenseInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayout.SuspendLayout();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
@@ -114,6 +115,7 @@
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.programInformationToolStripMenuItem,
+            this.licenseInformationToolStripMenuItem,
             this.settingsToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
@@ -132,7 +134,7 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(127, 36);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(244, 36);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -149,6 +151,13 @@
             this.programInformationToolStripMenuItem.Size = new System.Drawing.Size(249, 42);
             this.programInformationToolStripMenuItem.Text = "Program Information";
             this.programInformationToolStripMenuItem.Click += new System.EventHandler(this.programInformationToolStripMenuItem_Click);
+            // 
+            // licenseInformationToolStripMenuItem
+            // 
+            this.licenseInformationToolStripMenuItem.Name = "licenseInformationToolStripMenuItem";
+            this.licenseInformationToolStripMenuItem.Size = new System.Drawing.Size(237, 42);
+            this.licenseInformationToolStripMenuItem.Text = "License Information";
+            this.licenseInformationToolStripMenuItem.Click += new System.EventHandler(this.licenseInformationToolStripMenuItem_Click);
             // 
             // WhichYear
             // 
@@ -180,5 +189,6 @@
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem programInformationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem licenseInformationToolStripMenuItem;
     }
 }

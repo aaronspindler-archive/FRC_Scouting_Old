@@ -59,6 +59,12 @@
     <Compile Include="Home_2015.Designer.cs">
       <DependentUpon>Home_2015.cs</DependentUpon>
     </Compile>
+    <Compile Include="LicenseInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LicenseInformation.Designer.cs">
+      <DependentUpon>LicenseInformation.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainSettings.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,9 @@
     <EmbeddedResource Include="Home_2015.resx">
       <DependentUpon>Home_2015.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LicenseInformation.resx">
+      <DependentUpon>LicenseInformation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainSettings.resx">
       <DependentUpon>MainSettings.cs</DependentUpon>
     </EmbeddedResource>
@@ -100,6 +109,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="WhichYear.resx">
       <DependentUpon>WhichYear.cs</DependentUpon>

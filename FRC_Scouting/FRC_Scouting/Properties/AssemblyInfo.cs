@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("xNovax @ FRC 3710")]
 [assembly: AssemblyProduct("FRC_Scouting")]
-[assembly: AssemblyCopyright("GPL V3")]
+[assembly: AssemblyCopyright("(C) 2014 xNovax")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
