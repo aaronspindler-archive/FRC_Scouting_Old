@@ -72,5 +72,11 @@ namespace FRC_Scouting
             var ms = new MainSettings();
             ms.Show();
         }
+
+        private void programInformationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var pi = new ProgramInformation();
+            pi.Show();
+        }
     }
 }

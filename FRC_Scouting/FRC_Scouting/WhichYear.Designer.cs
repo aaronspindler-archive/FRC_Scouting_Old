@@ -37,6 +37,7 @@
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.programInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayout.SuspendLayout();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
@@ -65,7 +66,7 @@
             this.tableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayout.Size = new System.Drawing.Size(787, 184);
+            this.tableLayout.Size = new System.Drawing.Size(887, 184);
             this.tableLayout.TabIndex = 0;
             // 
             // whichYearComboBox
@@ -76,7 +77,7 @@
             this.whichYearComboBox.FormattingEnabled = true;
             this.whichYearComboBox.Location = new System.Drawing.Point(3, 95);
             this.whichYearComboBox.Name = "whichYearComboBox";
-            this.whichYearComboBox.Size = new System.Drawing.Size(781, 33);
+            this.whichYearComboBox.Size = new System.Drawing.Size(881, 33);
             this.whichYearComboBox.TabIndex = 1;
             this.whichYearComboBox.SelectedIndexChanged += new System.EventHandler(this.whichYearComboBox_SelectedIndexChanged);
             // 
@@ -87,19 +88,19 @@
             this.whichYearInformationLabel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.whichYearInformationLabel.Location = new System.Drawing.Point(3, 46);
             this.whichYearInformationLabel.Name = "whichYearInformationLabel";
-            this.whichYearInformationLabel.Size = new System.Drawing.Size(781, 46);
+            this.whichYearInformationLabel.Size = new System.Drawing.Size(881, 46);
             this.whichYearInformationLabel.TabIndex = 1;
-            this.whichYearInformationLabel.Text = "Use this form to select which years scouting application you would like to open.\r" +
-    "\n";
+            this.whichYearInformationLabel.Text = "Use this form to select which year\'s scouting application you would like to open." +
+    "\r\n";
             this.whichYearInformationLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // confirmSelectionButton
             // 
             this.tableLayout.SetColumnSpan(this.confirmSelectionButton, 4);
             this.confirmSelectionButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.confirmSelectionButton.Location = new System.Drawing.Point(199, 141);
+            this.confirmSelectionButton.Location = new System.Drawing.Point(223, 141);
             this.confirmSelectionButton.Name = "confirmSelectionButton";
-            this.confirmSelectionButton.Size = new System.Drawing.Size(386, 40);
+            this.confirmSelectionButton.Size = new System.Drawing.Size(434, 40);
             this.confirmSelectionButton.TabIndex = 2;
             this.confirmSelectionButton.Text = "Confirm Selection";
             this.confirmSelectionButton.UseVisualStyleBackColor = true;
@@ -112,10 +113,11 @@
             this.menuStrip.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
+            this.programInformationToolStripMenuItem,
             this.settingsToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(787, 46);
+            this.menuStrip.Size = new System.Drawing.Size(887, 46);
             this.menuStrip.TabIndex = 3;
             this.menuStrip.Text = "menuStrip1";
             // 
@@ -141,16 +143,23 @@
             this.settingsToolStripMenuItem.Text = "Settings";
             this.settingsToolStripMenuItem.Click += new System.EventHandler(this.settingsToolStripMenuItem_Click);
             // 
+            // programInformationToolStripMenuItem
+            // 
+            this.programInformationToolStripMenuItem.Name = "programInformationToolStripMenuItem";
+            this.programInformationToolStripMenuItem.Size = new System.Drawing.Size(249, 42);
+            this.programInformationToolStripMenuItem.Text = "Program Information";
+            this.programInformationToolStripMenuItem.Click += new System.EventHandler(this.programInformationToolStripMenuItem_Click);
+            // 
             // WhichYear
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(787, 184);
+            this.ClientSize = new System.Drawing.Size(887, 184);
             this.Controls.Add(this.tableLayout);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip;
             this.Name = "WhichYear";
-            this.Text = "Which Year\'s Scouting?";
+            this.Text = "FRC Scouting w/ Reporting Application";
             this.Load += new System.EventHandler(this.WhichYear_Load);
             this.tableLayout.ResumeLayout(false);
             this.tableLayout.PerformLayout();
@@ -170,5 +179,6 @@
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem programInformationToolStripMenuItem;
     }
 }

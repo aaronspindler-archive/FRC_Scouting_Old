@@ -30,10 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainSettings));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.clearAllSettingsLabel = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clearAllSettingsLabel = new System.Windows.Forms.Label();
             this.clearAllSettingsButton = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -66,8 +66,20 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(677, 410);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(677, 441);
             this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // clearAllSettingsLabel
+            // 
+            this.clearAllSettingsLabel.AutoSize = true;
+            this.tableLayoutPanel1.SetColumnSpan(this.clearAllSettingsLabel, 6);
+            this.clearAllSettingsLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.clearAllSettingsLabel.Location = new System.Drawing.Point(3, 50);
+            this.clearAllSettingsLabel.Name = "clearAllSettingsLabel";
+            this.clearAllSettingsLabel.Size = new System.Drawing.Size(498, 48);
+            this.clearAllSettingsLabel.TabIndex = 1;
+            this.clearAllSettingsLabel.Text = "Clear all Settings: ";
+            this.clearAllSettingsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // menuStrip1
             // 
@@ -92,21 +104,9 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(244, 36);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(127, 36);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
-            // 
-            // clearAllSettingsLabel
-            // 
-            this.clearAllSettingsLabel.AutoSize = true;
-            this.tableLayoutPanel1.SetColumnSpan(this.clearAllSettingsLabel, 6);
-            this.clearAllSettingsLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.clearAllSettingsLabel.Location = new System.Drawing.Point(3, 50);
-            this.clearAllSettingsLabel.Name = "clearAllSettingsLabel";
-            this.clearAllSettingsLabel.Size = new System.Drawing.Size(498, 45);
-            this.clearAllSettingsLabel.TabIndex = 1;
-            this.clearAllSettingsLabel.Text = "Clear all Settings: ";
-            this.clearAllSettingsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // clearAllSettingsButton
             // 
@@ -114,7 +114,7 @@
             this.clearAllSettingsButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.clearAllSettingsButton.Location = new System.Drawing.Point(507, 53);
             this.clearAllSettingsButton.Name = "clearAllSettingsButton";
-            this.clearAllSettingsButton.Size = new System.Drawing.Size(167, 39);
+            this.clearAllSettingsButton.Size = new System.Drawing.Size(167, 42);
             this.clearAllSettingsButton.TabIndex = 2;
             this.clearAllSettingsButton.Text = "Clear Settings";
             this.clearAllSettingsButton.UseVisualStyleBackColor = true;
@@ -124,7 +124,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(677, 410);
+            this.ClientSize = new System.Drawing.Size(677, 441);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
