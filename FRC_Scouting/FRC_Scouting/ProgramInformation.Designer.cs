@@ -151,6 +151,7 @@
             this.okButton.Size = new System.Drawing.Size(150, 39);
             this.okButton.TabIndex = 24;
             this.okButton.Text = "&OK";
+            this.okButton.Click += new System.EventHandler(this.okButton_Click);
             // 
             // ProgramInformation
             // 
