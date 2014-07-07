@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WhichYear));
             this.tableLayout = new System.Windows.Forms.TableLayoutPanel();
-            this.whichYearInformationLabel = new System.Windows.Forms.Label();
             this.whichYearComboBox = new System.Windows.Forms.ComboBox();
+            this.whichYearInformationLabel = new System.Windows.Forms.Label();
             this.confirmSelectionButton = new System.Windows.Forms.Button();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -68,6 +68,18 @@
             this.tableLayout.Size = new System.Drawing.Size(787, 184);
             this.tableLayout.TabIndex = 0;
             // 
+            // whichYearComboBox
+            // 
+            this.tableLayout.SetColumnSpan(this.whichYearComboBox, 8);
+            this.whichYearComboBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.whichYearComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.whichYearComboBox.FormattingEnabled = true;
+            this.whichYearComboBox.Location = new System.Drawing.Point(3, 95);
+            this.whichYearComboBox.Name = "whichYearComboBox";
+            this.whichYearComboBox.Size = new System.Drawing.Size(781, 33);
+            this.whichYearComboBox.TabIndex = 1;
+            this.whichYearComboBox.SelectedIndexChanged += new System.EventHandler(this.whichYearComboBox_SelectedIndexChanged);
+            // 
             // whichYearInformationLabel
             // 
             this.whichYearInformationLabel.AutoSize = true;
@@ -80,18 +92,6 @@
             this.whichYearInformationLabel.Text = "Use this form to select which years scouting application you would like to open.\r" +
     "\n";
             this.whichYearInformationLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // whichYearComboBox
-            // 
-            this.tableLayout.SetColumnSpan(this.whichYearComboBox, 8);
-            this.whichYearComboBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.whichYearComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.whichYearComboBox.FormattingEnabled = true;
-            this.whichYearComboBox.Location = new System.Drawing.Point(3, 95);
-            this.whichYearComboBox.Name = "whichYearComboBox";
-            this.whichYearComboBox.Size = new System.Drawing.Size(781, 33);
-            this.whichYearComboBox.TabIndex = 1;
-            this.whichYearComboBox.SelectedIndexChanged += new System.EventHandler(this.whichYearComboBox_SelectedIndexChanged);
             // 
             // confirmSelectionButton
             // 
@@ -130,7 +130,7 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(244, 36);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(127, 36);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -139,6 +139,7 @@
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
             this.settingsToolStripMenuItem.Size = new System.Drawing.Size(113, 42);
             this.settingsToolStripMenuItem.Text = "Settings";
+            this.settingsToolStripMenuItem.Click += new System.EventHandler(this.settingsToolStripMenuItem_Click);
             // 
             // WhichYear
             // 

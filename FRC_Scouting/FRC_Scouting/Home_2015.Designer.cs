@@ -1,6 +1,6 @@
 ﻿namespace FRC_Scouting
 {
-    partial class Home_2014
+    partial class Home_2015
     {
         /// <summary>
         /// Required designer variable.
@@ -30,12 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // Home_2014
+            // Home_2015
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.ClientSize = new System.Drawing.Size(810, 594);
-            this.Name = "Home_2014";
-            this.Text = "Home_2014";
+            this.Name = "Home_2015";
+            this.Text = "Home_2015";
+            this.Load += new System.EventHandler(this.Home_2015_Load);
             this.ResumeLayout(false);
 
         }

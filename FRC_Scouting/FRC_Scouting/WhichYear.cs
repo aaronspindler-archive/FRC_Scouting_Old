@@ -53,6 +53,9 @@ namespace FRC_Scouting
                         this.Hide();
                         break;
                     case 1:
+                        var home2015 = new Home_2015();
+                        home2015.Show();
+                        this.Hide();
                         break;
                 }
             }
@@ -61,6 +64,13 @@ namespace FRC_Scouting
         private void WhichYear_Load(object sender, EventArgs e)
         {
             whichYearComboBox.Items.Add("2013-2014 | Aerial Assist");
+            whichYearComboBox.Items.Add("2014-2015 | Undecieded");
+        }
+
+        private void settingsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var ms = new MainSettings();
+            ms.Show();
         }
     }
 }

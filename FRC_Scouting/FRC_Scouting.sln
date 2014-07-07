@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FRC_Scouting", "FRC_Scouting\FRC_Scouting.csproj", "{BEA8DBFA-751C-4EB7-B697-8397093C95E3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScoutingFormBase", "ScoutingFormBase\ScoutingFormBase.csproj", "{5CF52D92-015E-4B29-9601-A75604A762BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{BEA8DBFA-751C-4EB7-B697-8397093C95E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BEA8DBFA-751C-4EB7-B697-8397093C95E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BEA8DBFA-751C-4EB7-B697-8397093C95E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CF52D92-015E-4B29-9601-A75604A762BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CF52D92-015E-4B29-9601-A75604A762BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CF52D92-015E-4B29-9601-A75604A762BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CF52D92-015E-4B29-9601-A75604A762BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
