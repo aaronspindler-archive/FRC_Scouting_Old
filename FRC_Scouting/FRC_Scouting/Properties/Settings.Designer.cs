@@ -37,7 +37,7 @@ namespace FRC_Scouting.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Example : 192.168.1.1")]
         public string databaseHost {
             get {
                 return ((string)(this["databaseHost"]));
@@ -49,7 +49,7 @@ namespace FRC_Scouting.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Example : 3306")]
         public string databasePort {
             get {
                 return ((string)(this["databasePort"]));
@@ -61,7 +61,7 @@ namespace FRC_Scouting.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Example : root")]
         public string databaseUsername {
             get {
                 return ((string)(this["databaseUsername"]));
@@ -73,13 +73,25 @@ namespace FRC_Scouting.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Example : password123")]
         public string databasePassword {
             get {
                 return ((string)(this["databasePassword"]));
             }
             set {
                 this["databasePassword"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool ClickToDeleteTextField {
+            get {
+                return ((bool)(this["ClickToDeleteTextField"]));
+            }
+            set {
+                this["ClickToDeleteTextField"] = value;
             }
         }
     }

@@ -36,8 +36,10 @@
             this.tabControl = new System.Windows.Forms.TabControl();
             this.generalSettingsTab = new System.Windows.Forms.TabPage();
             this.generalSettingsTableLayout = new System.Windows.Forms.TableLayoutPanel();
+            this.textfieldClickEmptyLabel = new System.Windows.Forms.Label();
             this.clearAllSettingsLabel = new System.Windows.Forms.Label();
             this.clearAllSettingsButton = new System.Windows.Forms.Button();
+            this.ClickToEmptyTextFieldCheckBox = new System.Windows.Forms.CheckBox();
             this.dataBaseSettingsTab = new System.Windows.Forms.TabPage();
             this.databaseSettingsTableLayout = new System.Windows.Forms.TableLayoutPanel();
             this.databasePasswordTextBox = new System.Windows.Forms.TextBox();
@@ -146,8 +148,10 @@
             this.generalSettingsTableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.generalSettingsTableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.generalSettingsTableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.generalSettingsTableLayout.Controls.Add(this.textfieldClickEmptyLabel, 0, 1);
             this.generalSettingsTableLayout.Controls.Add(this.clearAllSettingsLabel, 0, 0);
             this.generalSettingsTableLayout.Controls.Add(this.clearAllSettingsButton, 2, 0);
+            this.generalSettingsTableLayout.Controls.Add(this.ClickToEmptyTextFieldCheckBox, 2, 1);
             this.generalSettingsTableLayout.Dock = System.Windows.Forms.DockStyle.Fill;
             this.generalSettingsTableLayout.Location = new System.Drawing.Point(3, 3);
             this.generalSettingsTableLayout.Name = "generalSettingsTableLayout";
@@ -162,6 +166,18 @@
             this.generalSettingsTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.generalSettingsTableLayout.Size = new System.Drawing.Size(657, 444);
             this.generalSettingsTableLayout.TabIndex = 0;
+            // 
+            // textfieldClickEmptyLabel
+            // 
+            this.textfieldClickEmptyLabel.AutoSize = true;
+            this.generalSettingsTableLayout.SetColumnSpan(this.textfieldClickEmptyLabel, 2);
+            this.textfieldClickEmptyLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textfieldClickEmptyLabel.Location = new System.Drawing.Point(3, 55);
+            this.textfieldClickEmptyLabel.Name = "textfieldClickEmptyLabel";
+            this.textfieldClickEmptyLabel.Size = new System.Drawing.Size(322, 55);
+            this.textfieldClickEmptyLabel.TabIndex = 1;
+            this.textfieldClickEmptyLabel.Text = "Textfield Click Empty";
+            this.textfieldClickEmptyLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // clearAllSettingsLabel
             // 
@@ -186,6 +202,19 @@
             this.clearAllSettingsButton.Text = "Clear Settings";
             this.clearAllSettingsButton.UseVisualStyleBackColor = true;
             this.clearAllSettingsButton.Click += new System.EventHandler(this.clearAllSettingsButton_Click);
+            // 
+            // ClickToEmptyTextFieldCheckBox
+            // 
+            this.ClickToEmptyTextFieldCheckBox.AutoSize = true;
+            this.ClickToEmptyTextFieldCheckBox.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.generalSettingsTableLayout.SetColumnSpan(this.ClickToEmptyTextFieldCheckBox, 2);
+            this.ClickToEmptyTextFieldCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ClickToEmptyTextFieldCheckBox.Location = new System.Drawing.Point(331, 58);
+            this.ClickToEmptyTextFieldCheckBox.Name = "ClickToEmptyTextFieldCheckBox";
+            this.ClickToEmptyTextFieldCheckBox.Size = new System.Drawing.Size(323, 49);
+            this.ClickToEmptyTextFieldCheckBox.TabIndex = 2;
+            this.ClickToEmptyTextFieldCheckBox.UseVisualStyleBackColor = true;
+            this.ClickToEmptyTextFieldCheckBox.CheckedChanged += new System.EventHandler(this.ClickToEmptyTextFieldCheckBox_CheckedChanged);
             // 
             // dataBaseSettingsTab
             // 
@@ -364,6 +393,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(677, 544);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainSettings";
@@ -407,5 +437,7 @@
         private System.Windows.Forms.Label databasePortLabel;
         private System.Windows.Forms.Label databasePasswordLabel;
         private System.Windows.Forms.CheckBox onlineDatabaseCheckBox;
+        private System.Windows.Forms.Label textfieldClickEmptyLabel;
+        private System.Windows.Forms.CheckBox ClickToEmptyTextFieldCheckBox;
     }
 }
