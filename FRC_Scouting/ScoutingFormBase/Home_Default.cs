@@ -1,6 +1,6 @@
-﻿using System;
+﻿using FRC_Scouting;
+using System;
 using System.Windows.Forms;
-using FRC_Scouting;
 
 namespace ScoutingFormBase
 {
@@ -10,8 +10,9 @@ namespace ScoutingFormBase
         {
             InitializeComponent();
         }
+
         //Variables
-        UsefulSnippets uc = new UsefulSnippets();
+        private UsefulSnippets uc = new UsefulSnippets();
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {

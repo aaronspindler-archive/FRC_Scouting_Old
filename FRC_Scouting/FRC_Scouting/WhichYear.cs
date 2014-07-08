@@ -12,7 +12,7 @@ namespace FRC_Scouting
 
         private int whichToOpen;
         private Boolean yearSelected = false;
-        UsefulSnippets us = new UsefulSnippets();
+        private UsefulSnippets us = new UsefulSnippets();
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -27,10 +27,12 @@ namespace FRC_Scouting
                     whichToOpen = 0;
                     yearSelected = true;
                     break;
+
                 case 1:
                     whichToOpen = 1;
                     yearSelected = true;
                     break;
+
                 default:
                     yearSelected = false;
                     break;
@@ -52,6 +54,7 @@ namespace FRC_Scouting
                         home2014.Show();
                         this.Hide();
                         break;
+
                     case 1:
                         var home2015 = new Home_2015();
                         home2015.Show();

@@ -5,7 +5,7 @@ using System.Windows.Forms;
 
 namespace FRC_Scouting
 {
-    class UsefulSnippets
+    internal class UsefulSnippets
     {
         public void ErrorOccured(string error)
         {

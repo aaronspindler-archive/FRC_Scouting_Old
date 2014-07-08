@@ -1,36 +1,47 @@
-﻿using System;
+﻿using FRC_Scouting.Properties;
+using System;
 using System.Windows.Forms;
 
 namespace FRC_Scouting
 {
     public partial class MainSettings : Form
     {
+        private readonly UsefulSnippets us = new UsefulSnippets();
+        private string databaseHostAddress;
+        private string databasePassword;
+        private string databasePort;
+        private string databaseUsername;
+        private Boolean onlineDatabaseUsed;
+
         public MainSettings()
         {
             InitializeComponent();
         }
 
-        //Variables
-        UsefulSnippets us = new UsefulSnippets();
-        private string databaseHostAddress;
-        private string databasePort;
-        private string databaseUsername;
-        private string databasePassword;
-        private Boolean onlineDatabaseUsed;
-
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        public void LoadTextboxText()
         {
-            this.Close();
+            if (FRC_Scouting.Properties.Settings.Default.OnlineDatabase == true)
+            {
+                databaseHostTextBox.Text = FRC_Scouting.Properties.Settings.Default.databaseHost;
+                databasePortTextBox.Text = FRC_Scouting.Properties.Settings.Default.databasePort;
+                databaseUsernameTextBox.Text = FRC_Scouting.Properties.Settings.Default.databaseUsername;
+                databasePasswordTextBox.Text = FRC_Scouting.Properties.Settings.Default.databasePassword;
+            }
         }
 
-        private void MainSettings_Load(object sender, EventArgs e)
+        public void SaveAllSettings()
         {
-            UpdateDatabaseUI();
+            Settings.Default.databaseHost = databaseHostAddress;
+            Settings.Default.databasePort = databasePort;
+            Settings.Default.databaseUsername = databaseUsername;
+            Settings.Default.databasePassword = databasePassword;
+            Settings.Default.OnlineDatabase = onlineDatabaseUsed;
+            Settings.Default.Save();
         }
 
         public void UpdateDatabaseUI()
         {
-            if (FRC_Scouting.Properties.Settings.Default.OnlineDatabase == true)
+            if (Settings.Default.OnlineDatabase)
             {
                 databaseHostTextBox.Enabled = true;
                 databasePortTextBox.Enabled = true;
@@ -39,7 +50,7 @@ namespace FRC_Scouting
             }
             else
             {
-                if (FRC_Scouting.Properties.Settings.Default.OnlineDatabase == false)
+                if (Settings.Default.OnlineDatabase == false)
                 {
                     databaseHostTextBox.Enabled = false;
                     databasePortTextBox.Enabled = false;
@@ -49,24 +60,14 @@ namespace FRC_Scouting
             }
         }
 
-        public void SaveAllSettings()
-        {
-            FRC_Scouting.Properties.Settings.Default.databaseHost = databaseHostAddress;
-            FRC_Scouting.Properties.Settings.Default.databasePort = databasePort;
-            FRC_Scouting.Properties.Settings.Default.databaseUsername = databaseUsername;
-            FRC_Scouting.Properties.Settings.Default.databasePassword = databasePassword;
-            FRC_Scouting.Properties.Settings.Default.OnlineDatabase = onlineDatabaseUsed;
-            FRC_Scouting.Properties.Settings.Default.Save();
-        }
-
-        private void saveDatabaseSettingsButton_Click(object sender, EventArgs e)
-        {
-            SaveAllSettings();
-        }
-
         private void clearAllSettingsButton_Click(object sender, EventArgs e)
         {
             us.ClearSettings();
+        }
+
+        private void databaseHostTextBox_MouseClick(object sender, MouseEventArgs e)
+        {
+            databaseHostTextBox.Text = ("");
         }
 
         private void databaseHostTextBox_TextChanged(object sender, EventArgs e)
@@ -77,20 +78,9 @@ namespace FRC_Scouting
             }
         }
 
-        private void databasePortTextBox_TextChanged(object sender, EventArgs e)
+        private void databasePasswordTextBox_MouseClick(object sender, MouseEventArgs e)
         {
-            if (databasePortTextBox.Text != (""))
-            {
-                databasePort = databasePortTextBox.Text;
-            }
-        }
-
-        private void databaseUsernameTextBox_TextChanged(object sender, EventArgs e)
-        {
-            if (databaseUsernameTextBox.Text != (""))
-            {
-                databaseUsername = databaseUsernameTextBox.Text;
-            }
+            databasePasswordTextBox.Text = ("");
         }
 
         private void databasePasswordTextBox_TextChanged(object sender, EventArgs e)
@@ -101,14 +91,17 @@ namespace FRC_Scouting
             }
         }
 
-        private void databaseHostTextBox_MouseClick(object sender, MouseEventArgs e)
-        {
-            databaseHostTextBox.Text = ("");
-        }
-
         private void databasePortTextBox_MouseClick(object sender, MouseEventArgs e)
         {
             databasePortTextBox.Text = ("");
+        }
+
+        private void databasePortTextBox_TextChanged(object sender, EventArgs e)
+        {
+            if (databasePortTextBox.Text != (""))
+            {
+                databasePort = databasePortTextBox.Text;
+            }
         }
 
         private void databaseUsernameTextBox_MouseClick(object sender, MouseEventArgs e)
@@ -116,29 +109,48 @@ namespace FRC_Scouting
             databaseUsernameTextBox.Text = ("");
         }
 
-        private void databasePasswordTextBox_MouseClick(object sender, MouseEventArgs e)
+        private void databaseUsernameTextBox_TextChanged(object sender, EventArgs e)
         {
-            databasePasswordTextBox.Text = ("");
+            if (databaseUsernameTextBox.Text != (""))
+            {
+                databaseUsername = databaseUsernameTextBox.Text;
+            }
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void MainSettings_Load(object sender, EventArgs e)
+        {
+            UpdateDatabaseUI();
+            LoadTextboxText();
         }
 
         private void onlineDatabaseCheckBox_CheckedChanged(object sender, EventArgs e)
         {
-            if (onlineDatabaseCheckBox.Checked == true)
+            if (onlineDatabaseCheckBox.Checked)
             {
                 onlineDatabaseUsed = true;
-                FRC_Scouting.Properties.Settings.Default.OnlineDatabase = true;
-                FRC_Scouting.Properties.Settings.Default.Save();
+                Settings.Default.OnlineDatabase = true;
+                Settings.Default.Save();
             }
             else
             {
                 if (onlineDatabaseCheckBox.Checked == false)
                 {
                     onlineDatabaseUsed = false;
-                    FRC_Scouting.Properties.Settings.Default.OnlineDatabase = false;
-                    FRC_Scouting.Properties.Settings.Default.Save();
+                    Settings.Default.OnlineDatabase = false;
+                    Settings.Default.Save();
                 }
             }
             UpdateDatabaseUI();
+        }
+
+        private void saveDatabaseSettingsButton_Click(object sender, EventArgs e)
+        {
+            SaveAllSettings();
         }
     }
 }
