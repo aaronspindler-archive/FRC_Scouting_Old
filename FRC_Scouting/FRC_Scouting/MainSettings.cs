@@ -16,6 +16,7 @@ namespace FRC_Scouting
         private string databasePort;
         private string databaseUsername;
         private string databasePassword;
+        private Boolean onlineDatabaseUsed;
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -24,12 +25,43 @@ namespace FRC_Scouting
 
         private void MainSettings_Load(object sender, EventArgs e)
         {
+            UpdateDatabaseUI();
+        }
 
+        public void UpdateDatabaseUI()
+        {
+            if (FRC_Scouting.Properties.Settings.Default.OnlineDatabase == true)
+            {
+                databaseHostTextBox.Enabled = true;
+                databasePortTextBox.Enabled = true;
+                databaseUsernameTextBox.Enabled = true;
+                databasePasswordTextBox.Enabled = true;
+            }
+            else
+            {
+                if (FRC_Scouting.Properties.Settings.Default.OnlineDatabase == false)
+                {
+                    databaseHostTextBox.Enabled = false;
+                    databasePortTextBox.Enabled = false;
+                    databaseUsernameTextBox.Enabled = false;
+                    databasePasswordTextBox.Enabled = false;
+                }
+            }
+        }
+
+        public void SaveAllSettings()
+        {
+            FRC_Scouting.Properties.Settings.Default.databaseHost = databaseHostAddress;
+            FRC_Scouting.Properties.Settings.Default.databasePort = databasePort;
+            FRC_Scouting.Properties.Settings.Default.databaseUsername = databaseUsername;
+            FRC_Scouting.Properties.Settings.Default.databasePassword = databasePassword;
+            FRC_Scouting.Properties.Settings.Default.OnlineDatabase = onlineDatabaseUsed;
+            FRC_Scouting.Properties.Settings.Default.Save();
         }
 
         private void saveDatabaseSettingsButton_Click(object sender, EventArgs e)
         {
-
+            SaveAllSettings();
         }
 
         private void clearAllSettingsButton_Click(object sender, EventArgs e)
@@ -87,6 +119,26 @@ namespace FRC_Scouting
         private void databasePasswordTextBox_MouseClick(object sender, MouseEventArgs e)
         {
             databasePasswordTextBox.Text = ("");
+        }
+
+        private void onlineDatabaseCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (onlineDatabaseCheckBox.Checked == true)
+            {
+                onlineDatabaseUsed = true;
+                FRC_Scouting.Properties.Settings.Default.OnlineDatabase = true;
+                FRC_Scouting.Properties.Settings.Default.Save();
+            }
+            else
+            {
+                if (onlineDatabaseCheckBox.Checked == false)
+                {
+                    onlineDatabaseUsed = false;
+                    FRC_Scouting.Properties.Settings.Default.OnlineDatabase = false;
+                    FRC_Scouting.Properties.Settings.Default.Save();
+                }
+            }
+            UpdateDatabaseUI();
         }
     }
 }

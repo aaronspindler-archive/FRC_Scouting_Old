@@ -49,6 +49,7 @@
             this.saveDatabaseSettingsButton = new System.Windows.Forms.Button();
             this.databasePortLabel = new System.Windows.Forms.Label();
             this.databasePasswordLabel = new System.Windows.Forms.Label();
+            this.onlineDatabaseCheckBox = new System.Windows.Forms.CheckBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.tabControl.SuspendLayout();
@@ -204,15 +205,16 @@
             this.databaseSettingsTableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.databaseSettingsTableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.databaseSettingsTableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.databaseSettingsTableLayout.Controls.Add(this.databasePasswordTextBox, 2, 3);
-            this.databaseSettingsTableLayout.Controls.Add(this.databaseUsernameTextBox, 2, 2);
-            this.databaseSettingsTableLayout.Controls.Add(this.databasePortTextBox, 2, 1);
-            this.databaseSettingsTableLayout.Controls.Add(this.databaseHostTextBox, 2, 0);
-            this.databaseSettingsTableLayout.Controls.Add(this.databaseUsernameLabel, 0, 2);
-            this.databaseSettingsTableLayout.Controls.Add(this.databaseHostLabel, 0, 0);
+            this.databaseSettingsTableLayout.Controls.Add(this.databasePasswordTextBox, 2, 4);
+            this.databaseSettingsTableLayout.Controls.Add(this.databaseUsernameTextBox, 2, 3);
+            this.databaseSettingsTableLayout.Controls.Add(this.databasePortTextBox, 2, 2);
+            this.databaseSettingsTableLayout.Controls.Add(this.databaseHostTextBox, 2, 1);
+            this.databaseSettingsTableLayout.Controls.Add(this.databaseUsernameLabel, 0, 3);
+            this.databaseSettingsTableLayout.Controls.Add(this.databaseHostLabel, 0, 1);
             this.databaseSettingsTableLayout.Controls.Add(this.saveDatabaseSettingsButton, 1, 7);
-            this.databaseSettingsTableLayout.Controls.Add(this.databasePortLabel, 0, 1);
-            this.databaseSettingsTableLayout.Controls.Add(this.databasePasswordLabel, 0, 3);
+            this.databaseSettingsTableLayout.Controls.Add(this.databasePortLabel, 0, 2);
+            this.databaseSettingsTableLayout.Controls.Add(this.databasePasswordLabel, 0, 4);
+            this.databaseSettingsTableLayout.Controls.Add(this.onlineDatabaseCheckBox, 0, 0);
             this.databaseSettingsTableLayout.Dock = System.Windows.Forms.DockStyle.Fill;
             this.databaseSettingsTableLayout.Location = new System.Drawing.Point(3, 3);
             this.databaseSettingsTableLayout.Name = "databaseSettingsTableLayout";
@@ -233,10 +235,10 @@
             // 
             this.databaseSettingsTableLayout.SetColumnSpan(this.databasePasswordTextBox, 2);
             this.databasePasswordTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.databasePasswordTextBox.Location = new System.Drawing.Point(331, 168);
+            this.databasePasswordTextBox.Location = new System.Drawing.Point(331, 223);
             this.databasePasswordTextBox.Name = "databasePasswordTextBox";
             this.databasePasswordTextBox.Size = new System.Drawing.Size(323, 31);
-            this.databasePasswordTextBox.TabIndex = 6;
+            this.databasePasswordTextBox.TabIndex = 5;
             this.databasePasswordTextBox.Text = "Example : password123";
             this.databasePasswordTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.databasePasswordTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.databasePasswordTextBox_MouseClick);
@@ -246,10 +248,10 @@
             // 
             this.databaseSettingsTableLayout.SetColumnSpan(this.databaseUsernameTextBox, 2);
             this.databaseUsernameTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.databaseUsernameTextBox.Location = new System.Drawing.Point(331, 113);
+            this.databaseUsernameTextBox.Location = new System.Drawing.Point(331, 168);
             this.databaseUsernameTextBox.Name = "databaseUsernameTextBox";
             this.databaseUsernameTextBox.Size = new System.Drawing.Size(323, 31);
-            this.databaseUsernameTextBox.TabIndex = 5;
+            this.databaseUsernameTextBox.TabIndex = 4;
             this.databaseUsernameTextBox.Text = "Example : root";
             this.databaseUsernameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.databaseUsernameTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.databaseUsernameTextBox_MouseClick);
@@ -259,10 +261,10 @@
             // 
             this.databaseSettingsTableLayout.SetColumnSpan(this.databasePortTextBox, 2);
             this.databasePortTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.databasePortTextBox.Location = new System.Drawing.Point(331, 58);
+            this.databasePortTextBox.Location = new System.Drawing.Point(331, 113);
             this.databasePortTextBox.Name = "databasePortTextBox";
             this.databasePortTextBox.Size = new System.Drawing.Size(323, 31);
-            this.databasePortTextBox.TabIndex = 4;
+            this.databasePortTextBox.TabIndex = 3;
             this.databasePortTextBox.Text = "Example : 3306";
             this.databasePortTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.databasePortTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.databasePortTextBox_MouseClick);
@@ -272,11 +274,11 @@
             // 
             this.databaseSettingsTableLayout.SetColumnSpan(this.databaseHostTextBox, 2);
             this.databaseHostTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.databaseHostTextBox.Location = new System.Drawing.Point(331, 3);
+            this.databaseHostTextBox.Location = new System.Drawing.Point(331, 58);
             this.databaseHostTextBox.Name = "databaseHostTextBox";
             this.databaseHostTextBox.Size = new System.Drawing.Size(323, 31);
-            this.databaseHostTextBox.TabIndex = 1;
-            this.databaseHostTextBox.Text = "Example : localhost";
+            this.databaseHostTextBox.TabIndex = 2;
+            this.databaseHostTextBox.Text = "Example : 192.168.1.1";
             this.databaseHostTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.databaseHostTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.databaseHostTextBox_MouseClick);
             this.databaseHostTextBox.TextChanged += new System.EventHandler(this.databaseHostTextBox_TextChanged);
@@ -286,7 +288,7 @@
             this.databaseUsernameLabel.AutoSize = true;
             this.databaseSettingsTableLayout.SetColumnSpan(this.databaseUsernameLabel, 2);
             this.databaseUsernameLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.databaseUsernameLabel.Location = new System.Drawing.Point(3, 110);
+            this.databaseUsernameLabel.Location = new System.Drawing.Point(3, 165);
             this.databaseUsernameLabel.Name = "databaseUsernameLabel";
             this.databaseUsernameLabel.Size = new System.Drawing.Size(322, 55);
             this.databaseUsernameLabel.TabIndex = 1;
@@ -298,7 +300,7 @@
             this.databaseHostLabel.AutoSize = true;
             this.databaseSettingsTableLayout.SetColumnSpan(this.databaseHostLabel, 2);
             this.databaseHostLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.databaseHostLabel.Location = new System.Drawing.Point(3, 0);
+            this.databaseHostLabel.Location = new System.Drawing.Point(3, 55);
             this.databaseHostLabel.Name = "databaseHostLabel";
             this.databaseHostLabel.Size = new System.Drawing.Size(322, 55);
             this.databaseHostLabel.TabIndex = 1;
@@ -312,7 +314,7 @@
             this.saveDatabaseSettingsButton.Location = new System.Drawing.Point(167, 388);
             this.saveDatabaseSettingsButton.Name = "saveDatabaseSettingsButton";
             this.saveDatabaseSettingsButton.Size = new System.Drawing.Size(322, 53);
-            this.saveDatabaseSettingsButton.TabIndex = 0;
+            this.saveDatabaseSettingsButton.TabIndex = 6;
             this.saveDatabaseSettingsButton.Text = "Save Database Settings";
             this.saveDatabaseSettingsButton.UseVisualStyleBackColor = true;
             this.saveDatabaseSettingsButton.Click += new System.EventHandler(this.saveDatabaseSettingsButton_Click);
@@ -322,7 +324,7 @@
             this.databasePortLabel.AutoSize = true;
             this.databaseSettingsTableLayout.SetColumnSpan(this.databasePortLabel, 2);
             this.databasePortLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.databasePortLabel.Location = new System.Drawing.Point(3, 55);
+            this.databasePortLabel.Location = new System.Drawing.Point(3, 110);
             this.databasePortLabel.Name = "databasePortLabel";
             this.databasePortLabel.Size = new System.Drawing.Size(322, 55);
             this.databasePortLabel.TabIndex = 2;
@@ -334,12 +336,27 @@
             this.databasePasswordLabel.AutoSize = true;
             this.databaseSettingsTableLayout.SetColumnSpan(this.databasePasswordLabel, 2);
             this.databasePasswordLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.databasePasswordLabel.Location = new System.Drawing.Point(3, 165);
+            this.databasePasswordLabel.Location = new System.Drawing.Point(3, 220);
             this.databasePasswordLabel.Name = "databasePasswordLabel";
             this.databasePasswordLabel.Size = new System.Drawing.Size(322, 55);
             this.databasePasswordLabel.TabIndex = 3;
             this.databasePasswordLabel.Text = "Database Password: ";
             this.databasePasswordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // onlineDatabaseCheckBox
+            // 
+            this.onlineDatabaseCheckBox.AutoSize = true;
+            this.onlineDatabaseCheckBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.databaseSettingsTableLayout.SetColumnSpan(this.onlineDatabaseCheckBox, 4);
+            this.onlineDatabaseCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.onlineDatabaseCheckBox.Location = new System.Drawing.Point(3, 3);
+            this.onlineDatabaseCheckBox.Name = "onlineDatabaseCheckBox";
+            this.onlineDatabaseCheckBox.Size = new System.Drawing.Size(651, 49);
+            this.onlineDatabaseCheckBox.TabIndex = 1;
+            this.onlineDatabaseCheckBox.Text = "Do you want to use an online database?";
+            this.onlineDatabaseCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.onlineDatabaseCheckBox.UseVisualStyleBackColor = true;
+            this.onlineDatabaseCheckBox.CheckedChanged += new System.EventHandler(this.onlineDatabaseCheckBox_CheckedChanged);
             // 
             // MainSettings
             // 
@@ -389,5 +406,6 @@
         private System.Windows.Forms.Label databaseHostLabel;
         private System.Windows.Forms.Label databasePortLabel;
         private System.Windows.Forms.Label databasePasswordLabel;
+        private System.Windows.Forms.CheckBox onlineDatabaseCheckBox;
     }
 }
