@@ -2,19 +2,19 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="FRC_Scouting.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
-    <Setting Name="OnlineDatabase" Type="System.Boolean" Scope="User">
+    <Setting Name="CustomDatabaseUsed" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
-    <Setting Name="databaseHost" Type="System.String" Scope="User">
+    <Setting Name="CustomDatabaseHost" Type="System.String" Scope="User">
       <Value Profile="(Default)">Example : 192.168.1.1</Value>
     </Setting>
-    <Setting Name="databasePort" Type="System.String" Scope="User">
+    <Setting Name="CustomDatabasePort" Type="System.String" Scope="User">
       <Value Profile="(Default)">Example : 3306</Value>
     </Setting>
-    <Setting Name="databaseUsername" Type="System.String" Scope="User">
+    <Setting Name="CustomDatabaseUsername" Type="System.String" Scope="User">
       <Value Profile="(Default)">Example : root</Value>
     </Setting>
-    <Setting Name="databasePassword" Type="System.String" Scope="User">
+    <Setting Name="CustomDatabasePassword" Type="System.String" Scope="User">
       <Value Profile="(Default)">Example : password123</Value>
     </Setting>
     <Setting Name="ClickToDeleteTextField" Type="System.Boolean" Scope="User">

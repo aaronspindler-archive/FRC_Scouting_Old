@@ -7,21 +7,20 @@ namespace FRC_Scouting
     public partial class MainSettings : Form
     {
         private readonly UsefulSnippets us = new UsefulSnippets();
-        private string databaseHostAddress = ("Example : 192.168.1.1");
-        private string databasePassword = ("Example : password123");
-        private string databasePort = ("Example : 3306");
-        private string databaseUsername = ("Example : root");
-        private Boolean onlineDatabaseUsed;
+        private string customDatabaseHost;
+        private string customDatabasePassword;
+        private string customDatabasePort;
+        private Boolean customDatabaseUsed;
+        private string customDatabaseUsername;
 
         public MainSettings()
         {
             InitializeComponent();
         }
 
-        #region Enable Disable Checkbox
         public void EnableDisableTextBox()
         {
-            if (onlineDatabaseCheckBox.Checked == true)
+            if (onlineDatabaseCheckBox.Checked)
             {
                 databaseHostTextBox.Enabled = true;
                 databasePortTextBox.Enabled = true;
@@ -39,36 +38,14 @@ namespace FRC_Scouting
                 }
             }
         }
-        #endregion
 
-        public void LoadTextboxText()
+        public void SaveAllDatabaseSettings()
         {
-            if (FRC_Scouting.Properties.Settings.Default.OnlineDatabase == true)
-            {
-                databaseHostTextBox.Text = FRC_Scouting.Properties.Settings.Default.databaseHost;
-                databasePortTextBox.Text = FRC_Scouting.Properties.Settings.Default.databasePort;
-                databaseUsernameTextBox.Text = FRC_Scouting.Properties.Settings.Default.databaseUsername;
-                databasePasswordTextBox.Text = FRC_Scouting.Properties.Settings.Default.databasePassword;
-            }
-            else
-            {
-                if (FRC_Scouting.Properties.Settings.Default.OnlineDatabase == false)
-                {
-                    databaseHostTextBox.Text = ("Example : 192.168.1.1");
-                    databasePortTextBox.Text = ("Example : 3306");
-                    databaseUsernameTextBox.Text = ("Example : root");
-                    databasePasswordTextBox.Text = ("Example : password123");
-                }
-            }
-        }
-
-        public void SaveAllSettings()
-        {
-            Settings.Default.databaseHost = databaseHostAddress;
-            Settings.Default.databasePort = databasePort;
-            Settings.Default.databaseUsername = databaseUsername;
-            Settings.Default.databasePassword = databasePassword;
-            Settings.Default.OnlineDatabase = onlineDatabaseUsed;
+            Settings.Default.CustomDatabaseHost = customDatabaseHost;
+            Settings.Default.CustomDatabasePort = customDatabasePort;
+            Settings.Default.CustomDatabaseUsername = customDatabaseUsername;
+            Settings.Default.CustomDatabasePassword = customDatabasePassword;
+            Settings.Default.CustomDatabaseUsed = customDatabaseUsed;
             Settings.Default.Save();
         }
 
@@ -77,49 +54,42 @@ namespace FRC_Scouting
             us.ClearSettings();
         }
 
-        #region Click To Delete
+        private void ClickToEmptyTextFieldCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            switch (ClickToEmptyTextFieldCheckBox.Checked)
+            {
+                case true:
+                    Settings.Default.ClickToDeleteTextField = ClickToEmptyTextFieldCheckBox.Checked;
+                    break;
+
+                case false:
+                    Settings.Default.ClickToDeleteTextField = ClickToEmptyTextFieldCheckBox.Checked;
+                    break;
+            }
+            Settings.Default.Save();
+        }
 
         private void databaseHostTextBox_MouseClick(object sender, MouseEventArgs e)
         {
-            if (FRC_Scouting.Properties.Settings.Default.ClickToDeleteTextField == true)
+            if (Settings.Default.ClickToDeleteTextField)
             {
                 databaseHostTextBox.Text = ("");
             }
         }
 
-        private void databasePasswordTextBox_MouseClick(object sender, MouseEventArgs e)
-        {
-            if (FRC_Scouting.Properties.Settings.Default.ClickToDeleteTextField == true)
-            {
-                databasePasswordTextBox.Text = ("");
-            }
-        }
-
-        private void databasePortTextBox_MouseClick(object sender, MouseEventArgs e)
-        {
-            if (FRC_Scouting.Properties.Settings.Default.ClickToDeleteTextField == true)
-            {
-                databasePortTextBox.Text = ("");
-            }
-        }
-
-        private void databaseUsernameTextBox_MouseClick(object sender, MouseEventArgs e)
-        {
-            if (FRC_Scouting.Properties.Settings.Default.ClickToDeleteTextField == true)
-            {
-                databaseUsernameTextBox.Text = ("");
-            }
-        }
-
-        #endregion Click To Delete
-
-        #region Text Gatherers
-
         private void databaseHostTextBox_TextChanged(object sender, EventArgs e)
         {
             if (databaseHostTextBox.Text != (""))
             {
-                databaseHostAddress = databaseHostTextBox.Text;
+                customDatabaseHost = databaseHostTextBox.Text;
+            }
+        }
+
+        private void databasePasswordTextBox_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (Settings.Default.ClickToDeleteTextField)
+            {
+                databasePasswordTextBox.Text = ("");
             }
         }
 
@@ -127,7 +97,15 @@ namespace FRC_Scouting
         {
             if (databasePasswordTextBox.Text != (""))
             {
-                databasePassword = databasePasswordTextBox.Text;
+                customDatabasePassword = databasePasswordTextBox.Text;
+            }
+        }
+
+        private void databasePortTextBox_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (Settings.Default.ClickToDeleteTextField)
+            {
+                databasePortTextBox.Text = ("");
             }
         }
 
@@ -135,7 +113,15 @@ namespace FRC_Scouting
         {
             if (databasePortTextBox.Text != (""))
             {
-                databasePort = databasePortTextBox.Text;
+                customDatabasePort = databasePortTextBox.Text;
+            }
+        }
+
+        private void databaseUsernameTextBox_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (Settings.Default.ClickToDeleteTextField)
+            {
+                databaseUsernameTextBox.Text = ("");
             }
         }
 
@@ -143,11 +129,9 @@ namespace FRC_Scouting
         {
             if (databaseUsernameTextBox.Text != (""))
             {
-                databaseUsername = databaseUsernameTextBox.Text;
+                customDatabaseUsername = databaseUsernameTextBox.Text;
             }
         }
-
-        #endregion Text Gatherers
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -156,74 +140,67 @@ namespace FRC_Scouting
 
         private void MainSettings_Load(object sender, EventArgs e)
         {
-            LoadTextboxText();
-            EnableDisableTextBox();
-
-            if (FRC_Scouting.Properties.Settings.Default.ClickToDeleteTextField == true)
+            if (Settings.Default.ClickToDeleteTextField)
             {
                 ClickToEmptyTextFieldCheckBox.Checked = true;
             }
             else
             {
-                if (FRC_Scouting.Properties.Settings.Default.ClickToDeleteTextField == false)
+                if (Settings.Default.ClickToDeleteTextField == false)
                 {
                     ClickToEmptyTextFieldCheckBox.Checked = false;
                 }
             }
-
-            if (FRC_Scouting.Properties.Settings.Default.OnlineDatabase == true)
+            if (Settings.Default.CustomDatabaseUsed)
             {
+                customDatabaseUsed = true;
                 onlineDatabaseCheckBox.Checked = true;
-                LoadTextboxText();
-            }
-            else
-            {
-                if (FRC_Scouting.Properties.Settings.Default.OnlineDatabase == false)
-                {
-                    onlineDatabaseCheckBox.Checked = false;
-                    LoadTextboxText();
-                }
-            }
-        }
+                customDatabaseHost = Settings.Default.CustomDatabaseHost;
+                customDatabasePort = Settings.Default.CustomDatabasePort;
+                customDatabaseUsername = Settings.Default.CustomDatabaseUsername;
+                customDatabasePassword = Settings.Default.CustomDatabasePassword;
 
+                databaseHostTextBox.Text = customDatabaseHost;
+                databasePortTextBox.Text = customDatabasePort;
+                databaseUsernameTextBox.Text = customDatabaseUsername;
+                databasePasswordTextBox.Text = customDatabasePassword;
+            }
+            EnableDisableTextBox();
+        }
         private void onlineDatabaseCheckBox_CheckedChanged(object sender, EventArgs e)
         {
-            EnableDisableTextBox();
-
-            if (onlineDatabaseCheckBox.Checked == true)
+            if (onlineDatabaseCheckBox.Checked)
             {
-                onlineDatabaseUsed = true;
-                Settings.Default.OnlineDatabase = true;
+                customDatabaseUsed = true;
             }
             else
             {
                 if (onlineDatabaseCheckBox.Checked == false)
                 {
-                    onlineDatabaseUsed = false;
-                    Settings.Default.OnlineDatabase = false;
+                    customDatabaseUsed = false;
                 }
             }
-            FRC_Scouting.Properties.Settings.Default.Save();
+            EnableDisableTextBox();
         }
 
         private void saveDatabaseSettingsButton_Click(object sender, EventArgs e)
         {
-            SaveAllSettings();
+            SaveAllDatabaseSettings();
         }
-
-        private void ClickToEmptyTextFieldCheckBox_CheckedChanged(object sender, EventArgs e)
+        private void SaveGeneralSettingsButton_Click(object sender, EventArgs e)
         {
-            switch (ClickToEmptyTextFieldCheckBox.Checked)
+            if (ClickToEmptyTextFieldCheckBox.Checked)
             {
-                case true:
-                    FRC_Scouting.Properties.Settings.Default.ClickToDeleteTextField = ClickToEmptyTextFieldCheckBox.Checked;
-                    break;
-
-                case false:
-                    FRC_Scouting.Properties.Settings.Default.ClickToDeleteTextField = ClickToEmptyTextFieldCheckBox.Checked;
-                    break;
+                Settings.Default.ClickToDeleteTextField = true;
             }
-            FRC_Scouting.Properties.Settings.Default.Save();
+            else
+            {
+                if (ClickToEmptyTextFieldCheckBox.Checked == false)
+                {
+                    Settings.Default.ClickToDeleteTextField = false;
+                }
+            }
+            Settings.Default.Save();
         }
     }
 }

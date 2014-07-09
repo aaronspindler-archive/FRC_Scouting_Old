@@ -26,60 +26,60 @@ namespace FRC_Scouting.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool OnlineDatabase {
+        public bool CustomDatabaseUsed {
             get {
-                return ((bool)(this["OnlineDatabase"]));
+                return ((bool)(this["CustomDatabaseUsed"]));
             }
             set {
-                this["OnlineDatabase"] = value;
+                this["CustomDatabaseUsed"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("Example : 192.168.1.1")]
-        public string databaseHost {
+        public string CustomDatabaseHost {
             get {
-                return ((string)(this["databaseHost"]));
+                return ((string)(this["CustomDatabaseHost"]));
             }
             set {
-                this["databaseHost"] = value;
+                this["CustomDatabaseHost"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("Example : 3306")]
-        public string databasePort {
+        public string CustomDatabasePort {
             get {
-                return ((string)(this["databasePort"]));
+                return ((string)(this["CustomDatabasePort"]));
             }
             set {
-                this["databasePort"] = value;
+                this["CustomDatabasePort"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("Example : root")]
-        public string databaseUsername {
+        public string CustomDatabaseUsername {
             get {
-                return ((string)(this["databaseUsername"]));
+                return ((string)(this["CustomDatabaseUsername"]));
             }
             set {
-                this["databaseUsername"] = value;
+                this["CustomDatabaseUsername"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("Example : password123")]
-        public string databasePassword {
+        public string CustomDatabasePassword {
             get {
-                return ((string)(this["databasePassword"]));
+                return ((string)(this["CustomDatabasePassword"]));
             }
             set {
-                this["databasePassword"] = value;
+                this["CustomDatabasePassword"] = value;
             }
         }
         
