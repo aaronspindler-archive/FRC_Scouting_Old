@@ -122,6 +122,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip;
+            this.MaximizeBox = false;
             this.Name = "Home_Default";
             this.Text = "Home_Default";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Home_Default_FormClosing);

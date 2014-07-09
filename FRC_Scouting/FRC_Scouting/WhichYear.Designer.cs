@@ -168,6 +168,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip;
+            this.MaximizeBox = false;
             this.Name = "WhichYear";
             this.Text = "FRC Scouting w/ Reporting Application";
             this.Load += new System.EventHandler(this.WhichYear_Load);
