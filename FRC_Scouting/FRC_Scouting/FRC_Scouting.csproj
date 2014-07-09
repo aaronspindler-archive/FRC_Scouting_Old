@@ -114,6 +114,8 @@
     <EmbeddedResource Include="WhichYear.resx">
       <DependentUpon>WhichYear.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="bin\Debug\FRC_Scouting.exe.config" />
+    <None Include="bin\Debug\FRC_Scouting.vshost.exe.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -128,6 +130,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\Debug\FRC_Scouting.exe" />
+    <Content Include="bin\Debug\FRC_Scouting.pdb" />
+    <Content Include="bin\Debug\FRC_Scouting.vshost.exe" />
+    <Content Include="bin\Debug\ScoutingFormBase.dll" />
+    <Content Include="bin\Debug\ScoutingFormBase.pdb" />
     <Content Include="FRC_Logo_ICO.ico" />
     <Content Include="Information &amp; Planning\To-Do.txt" />
   </ItemGroup>
