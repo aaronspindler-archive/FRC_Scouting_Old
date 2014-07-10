@@ -36,6 +36,10 @@
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.timer = new System.Windows.Forms.Timer(this.components);
+            this.addToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aTeamToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aMatchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.anEventToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayout.SuspendLayout();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
@@ -86,10 +90,11 @@
             this.tableLayout.SetColumnSpan(this.menuStrip, 4);
             this.menuStrip.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem});
+            this.fileToolStripMenuItem,
+            this.addToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(404, 40);
+            this.menuStrip.Size = new System.Drawing.Size(404, 42);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "menuStrip1";
             // 
@@ -98,13 +103,13 @@
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(64, 36);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(64, 38);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(127, 36);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(244, 36);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -112,6 +117,34 @@
             // 
             this.timer.Interval = 1000;
             this.timer.Tick += new System.EventHandler(this.timer_Tick);
+            // 
+            // addToolStripMenuItem
+            // 
+            this.addToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aTeamToolStripMenuItem,
+            this.aMatchToolStripMenuItem,
+            this.anEventToolStripMenuItem});
+            this.addToolStripMenuItem.Name = "addToolStripMenuItem";
+            this.addToolStripMenuItem.Size = new System.Drawing.Size(70, 38);
+            this.addToolStripMenuItem.Text = "Add";
+            // 
+            // aTeamToolStripMenuItem
+            // 
+            this.aTeamToolStripMenuItem.Name = "aTeamToolStripMenuItem";
+            this.aTeamToolStripMenuItem.Size = new System.Drawing.Size(244, 36);
+            this.aTeamToolStripMenuItem.Text = "A Team";
+            // 
+            // aMatchToolStripMenuItem
+            // 
+            this.aMatchToolStripMenuItem.Name = "aMatchToolStripMenuItem";
+            this.aMatchToolStripMenuItem.Size = new System.Drawing.Size(244, 36);
+            this.aMatchToolStripMenuItem.Text = "A Match";
+            // 
+            // anEventToolStripMenuItem
+            // 
+            this.anEventToolStripMenuItem.Name = "anEventToolStripMenuItem";
+            this.anEventToolStripMenuItem.Size = new System.Drawing.Size(244, 36);
+            this.anEventToolStripMenuItem.Text = "An Event";
             // 
             // Home_Default
             // 
@@ -143,6 +176,10 @@
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.Label currentTimeDisplay;
         private System.Windows.Forms.Timer timer;
+        private System.Windows.Forms.ToolStripMenuItem addToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aTeamToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aMatchToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem anEventToolStripMenuItem;
     }
 }
 
