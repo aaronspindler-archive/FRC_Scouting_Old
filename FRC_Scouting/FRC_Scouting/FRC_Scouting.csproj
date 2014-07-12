@@ -139,9 +139,9 @@
     <Content Include="Information &amp; Planning\To-Do.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ScoutingFormBase\ScoutingFormBase.csproj">
+    <ProjectReference Include="..\ScoutingFormBase\YearBaseForm.csproj">
       <Project>{5CF52D92-015E-4B29-9601-A75604A762BC}</Project>
-      <Name>ScoutingFormBase</Name>
+      <Name>YearBaseForm</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
