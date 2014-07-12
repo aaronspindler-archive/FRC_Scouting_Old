@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChangeLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeLog.Designer.cs">
+      <DependentUpon>ChangeLog.cs</DependentUpon>
+    </Compile>
     <Compile Include="Home_2014.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,9 @@
     <Compile Include="WhichYear.Designer.cs">
       <DependentUpon>WhichYear.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ChangeLog.resx">
+      <DependentUpon>ChangeLog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Home_2014.resx">
       <DependentUpon>Home_2014.cs</DependentUpon>
     </EmbeddedResource>
@@ -139,9 +148,13 @@
     <Content Include="Information &amp; Planning\To-Do.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ScoutingFormBase\YearBaseForm.csproj">
+    <ProjectReference Include="..\General Form\GeneralForm.csproj">
+      <Project>{9862B9F1-5BC2-411F-A373-103DC585BDE9}</Project>
+      <Name>GeneralForm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ScoutingFormBase\ScoutingFormBase.csproj">
       <Project>{5CF52D92-015E-4B29-9601-A75604A762BC}</Project>
-      <Name>YearBaseForm</Name>
+      <Name>ScoutingFormBase</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -76,16 +76,22 @@ namespace FRC_Scouting
             ms.Show();
         }
 
-        private void programInformationToolStripMenuItem_Click(object sender, EventArgs e)
+        private void programInformationToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             var pi = new ProgramInformation();
             pi.Show();
         }
 
-        private void licenseInformationToolStripMenuItem_Click(object sender, EventArgs e)
+        private void licenseToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var li = new LicenseInformation();
             li.Show();
+        }
+
+        private void changelogToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var cl = new ChangeLog();
+            cl.Show();
         }
     }
 }
