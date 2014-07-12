@@ -93,5 +93,10 @@ namespace FRC_Scouting
             var cl = new ChangeLog();
             cl.Show();
         }
+
+        private void resetAllSettingsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            us.ClearSettings();
+        }
     }
 }
