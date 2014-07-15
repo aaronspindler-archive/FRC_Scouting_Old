@@ -52,6 +52,9 @@
   <PropertyGroup>
     <ApplicationIcon>FRC_Logo_ICO.ico</ApplicationIcon>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>FRC_Scouting.Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
