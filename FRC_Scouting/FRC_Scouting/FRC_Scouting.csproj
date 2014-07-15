@@ -68,23 +68,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AerialAssist_Nipissing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AerialAssist_Nipissing.Designer.cs">
+      <DependentUpon>AerialAssist_Nipissing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AerialAssist_Oshawa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AerialAssist_Oshawa.Designer.cs">
+      <DependentUpon>AerialAssist_Oshawa.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChangeLog.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ChangeLog.Designer.cs">
       <DependentUpon>ChangeLog.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Home_2014.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Home_2014.Designer.cs">
-      <DependentUpon>Home_2014.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Home_2015.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Home_2015.Designer.cs">
-      <DependentUpon>Home_2015.cs</DependentUpon>
     </Compile>
     <Compile Include="LicenseInformation.cs">
       <SubType>Form</SubType>
@@ -113,14 +113,14 @@
     <Compile Include="WhichYear.Designer.cs">
       <DependentUpon>WhichYear.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AerialAssist_Nipissing.resx">
+      <DependentUpon>AerialAssist_Nipissing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AerialAssist_Oshawa.resx">
+      <DependentUpon>AerialAssist_Oshawa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChangeLog.resx">
       <DependentUpon>ChangeLog.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Home_2014.resx">
-      <DependentUpon>Home_2014.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Home_2015.resx">
-      <DependentUpon>Home_2015.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LicenseInformation.resx">
       <DependentUpon>LicenseInformation.cs</DependentUpon>

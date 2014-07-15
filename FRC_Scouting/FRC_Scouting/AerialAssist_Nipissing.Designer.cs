@@ -1,6 +1,6 @@
 ﻿namespace FRC_Scouting
 {
-    partial class Home_2015
+    partial class AerialAssist_Nipissing
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,12 @@
         {
             this.SuspendLayout();
             // 
-            // Home_2015
+            // AerialAssist_Nipissing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.ClientSize = new System.Drawing.Size(810, 594);
-            this.Name = "Home_2015";
-            this.Text = "Home_2015";
-            this.Load += new System.EventHandler(this.Home_2015_Load);
+            this.Name = "AerialAssist_Nipissing";
+            this.Text = "Aerial Assist | Nipissing";
             this.ResumeLayout(false);
 
         }

@@ -47,26 +47,33 @@ namespace FRC_Scouting
             }
             else
             {
-                switch (whichToOpen)
+                if (yearSelected == true)
                 {
-                    case 0:
-                        var home2014 = new Home_2014();
-                        home2014.Show();
-                        this.Hide();
-                        break;
+                    switch (whichToOpen)
+                    {
+                        case 0:
+                            var aao = new AerialAssist_Oshawa();
+                            aao.Show();
+                            this.Hide();
+                            break;
 
-                    case 1:
-                        var home2015 = new Home_2015();
-                        home2015.Show();
-                        this.Hide();
-                        break;
+                        case 1:
+                            var aan = new AerialAssist_Nipissing();
+                            aan.Show();
+                            this.Hide();
+                            break;
+                        case 2:
+                            this.Hide();
+                            break;
+                    }
                 }
             }
         }
 
         private void WhichYear_Load(object sender, EventArgs e)
         {
-            whichYearComboBox.Items.Add("2013-2014 | Aerial Assist");
+            whichYearComboBox.Items.Add("2013-2014 | Aerial Assist | Oshawa");
+            whichYearComboBox.Items.Add("2013-2014 | Aerial Assist | Nipissing");
             whichYearComboBox.Items.Add("2014-2015 | Undecieded");
         }
 
