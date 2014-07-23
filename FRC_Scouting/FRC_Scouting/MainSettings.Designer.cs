@@ -155,7 +155,7 @@
             this.generalSettingsTableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.generalSettingsTableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.generalSettingsTableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.generalSettingsTableLayout.Controls.Add(this.SaveGeneralSettingsButton, 1, 7);
+            this.generalSettingsTableLayout.Controls.Add(this.SaveGeneralSettingsButton, 1, 3);
             this.generalSettingsTableLayout.Controls.Add(this.textfieldClickEmptyLabel, 0, 1);
             this.generalSettingsTableLayout.Controls.Add(this.clearAllSettingsLabel, 0, 0);
             this.generalSettingsTableLayout.Controls.Add(this.clearAllSettingsButton, 2, 0);
@@ -182,10 +182,10 @@
             // 
             this.generalSettingsTableLayout.SetColumnSpan(this.SaveGeneralSettingsButton, 2);
             this.SaveGeneralSettingsButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.SaveGeneralSettingsButton.Location = new System.Drawing.Point(169, 363);
+            this.SaveGeneralSettingsButton.Location = new System.Drawing.Point(169, 159);
             this.SaveGeneralSettingsButton.Margin = new System.Windows.Forms.Padding(6);
             this.SaveGeneralSettingsButton.Name = "SaveGeneralSettingsButton";
-            this.SaveGeneralSettingsButton.Size = new System.Drawing.Size(314, 45);
+            this.SaveGeneralSettingsButton.Size = new System.Drawing.Size(314, 39);
             this.SaveGeneralSettingsButton.TabIndex = 1;
             this.SaveGeneralSettingsButton.Text = "Save Settings";
             this.SaveGeneralSettingsButton.UseVisualStyleBackColor = true;
