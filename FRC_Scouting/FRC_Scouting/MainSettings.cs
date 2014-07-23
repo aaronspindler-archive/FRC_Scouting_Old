@@ -12,6 +12,7 @@ namespace FRC_Scouting
         private string customDatabasePort;
         private Boolean customDatabaseUsed;
         private string customDatabaseUsername;
+        private string username;
 
         public MainSettings()
         {
@@ -140,6 +141,7 @@ namespace FRC_Scouting
 
         private void MainSettings_Load(object sender, EventArgs e)
         {
+            usernameTextBox.Text = Settings.Default.username;
             if (Settings.Default.ClickToDeleteTextField)
             {
                 ClickToEmptyTextFieldCheckBox.Checked = true;
@@ -200,7 +202,21 @@ namespace FRC_Scouting
                     Settings.Default.ClickToDeleteTextField = false;
                 }
             }
+            Settings.Default.username = username;
             Settings.Default.Save();
+        }
+
+        private void usernameTextBox_TextChanged(object sender, EventArgs e)
+        {
+            username = usernameTextBox.Text;
+        }
+
+        private void usernameTextBox_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (Settings.Default.ClickToDeleteTextField)
+            {
+                usernameTextBox.Text = ("");
+            }
         }
     }
 }

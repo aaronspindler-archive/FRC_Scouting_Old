@@ -20,5 +20,8 @@
     <Setting Name="ClickToDeleteTextField" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
     </Setting>
+    <Setting Name="username" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Anon</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

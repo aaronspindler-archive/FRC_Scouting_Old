@@ -53,6 +53,8 @@
             this.databasePortLabel = new System.Windows.Forms.Label();
             this.databasePasswordLabel = new System.Windows.Forms.Label();
             this.onlineDatabaseCheckBox = new System.Windows.Forms.CheckBox();
+            this.usernameLabel = new System.Windows.Forms.Label();
+            this.usernameTextBox = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.tabControl.SuspendLayout();
@@ -158,6 +160,8 @@
             this.generalSettingsTableLayout.Controls.Add(this.clearAllSettingsLabel, 0, 0);
             this.generalSettingsTableLayout.Controls.Add(this.clearAllSettingsButton, 2, 0);
             this.generalSettingsTableLayout.Controls.Add(this.ClickToEmptyTextFieldCheckBox, 2, 1);
+            this.generalSettingsTableLayout.Controls.Add(this.usernameLabel, 0, 2);
+            this.generalSettingsTableLayout.Controls.Add(this.usernameTextBox, 2, 2);
             this.generalSettingsTableLayout.Dock = System.Windows.Forms.DockStyle.Fill;
             this.generalSettingsTableLayout.Location = new System.Drawing.Point(4, 4);
             this.generalSettingsTableLayout.Margin = new System.Windows.Forms.Padding(4);
@@ -422,6 +426,31 @@
             this.onlineDatabaseCheckBox.UseVisualStyleBackColor = true;
             this.onlineDatabaseCheckBox.CheckedChanged += new System.EventHandler(this.onlineDatabaseCheckBox_CheckedChanged);
             // 
+            // usernameLabel
+            // 
+            this.usernameLabel.AutoSize = true;
+            this.generalSettingsTableLayout.SetColumnSpan(this.usernameLabel, 2);
+            this.usernameLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.usernameLabel.Location = new System.Drawing.Point(3, 102);
+            this.usernameLabel.Name = "usernameLabel";
+            this.usernameLabel.Size = new System.Drawing.Size(320, 51);
+            this.usernameLabel.TabIndex = 3;
+            this.usernameLabel.Text = "Username :";
+            this.usernameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // usernameTextBox
+            // 
+            this.generalSettingsTableLayout.SetColumnSpan(this.usernameTextBox, 2);
+            this.usernameTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.usernameTextBox.Location = new System.Drawing.Point(329, 105);
+            this.usernameTextBox.Name = "usernameTextBox";
+            this.usernameTextBox.Size = new System.Drawing.Size(320, 31);
+            this.usernameTextBox.TabIndex = 4;
+            this.usernameTextBox.Text = "Example : Anon";
+            this.usernameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.usernameTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.usernameTextBox_MouseClick);
+            this.usernameTextBox.TextChanged += new System.EventHandler(this.usernameTextBox_TextChanged);
+            // 
             // MainSettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -477,5 +506,7 @@
         private System.Windows.Forms.Label textfieldClickEmptyLabel;
         private System.Windows.Forms.CheckBox ClickToEmptyTextFieldCheckBox;
         private System.Windows.Forms.Button SaveGeneralSettingsButton;
+        private System.Windows.Forms.Label usernameLabel;
+        private System.Windows.Forms.TextBox usernameTextBox;
     }
 }
