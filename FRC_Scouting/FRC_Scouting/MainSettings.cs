@@ -169,6 +169,7 @@ namespace FRC_Scouting
             }
             EnableDisableTextBox();
         }
+
         private void onlineDatabaseCheckBox_CheckedChanged(object sender, EventArgs e)
         {
             if (onlineDatabaseCheckBox.Checked)
@@ -189,6 +190,7 @@ namespace FRC_Scouting
         {
             SaveAllDatabaseSettings();
         }
+
         private void SaveGeneralSettingsButton_Click(object sender, EventArgs e)
         {
             if (ClickToEmptyTextFieldCheckBox.Checked)
@@ -206,17 +208,17 @@ namespace FRC_Scouting
             Settings.Default.Save();
         }
 
-        private void usernameTextBox_TextChanged(object sender, EventArgs e)
-        {
-            username = usernameTextBox.Text;
-        }
-
         private void usernameTextBox_MouseClick(object sender, MouseEventArgs e)
         {
             if (Settings.Default.ClickToDeleteTextField)
             {
                 usernameTextBox.Text = ("");
             }
+        }
+
+        private void usernameTextBox_TextChanged(object sender, EventArgs e)
+        {
+            username = usernameTextBox.Text;
         }
     }
 }

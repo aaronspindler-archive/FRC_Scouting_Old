@@ -41,6 +41,8 @@
             this.clearAllSettingsLabel = new System.Windows.Forms.Label();
             this.clearAllSettingsButton = new System.Windows.Forms.Button();
             this.ClickToEmptyTextFieldCheckBox = new System.Windows.Forms.CheckBox();
+            this.usernameLabel = new System.Windows.Forms.Label();
+            this.usernameTextBox = new System.Windows.Forms.TextBox();
             this.dataBaseSettingsTab = new System.Windows.Forms.TabPage();
             this.databaseSettingsTableLayout = new System.Windows.Forms.TableLayoutPanel();
             this.databasePasswordTextBox = new System.Windows.Forms.TextBox();
@@ -53,8 +55,6 @@
             this.databasePortLabel = new System.Windows.Forms.Label();
             this.databasePasswordLabel = new System.Windows.Forms.Label();
             this.onlineDatabaseCheckBox = new System.Windows.Forms.CheckBox();
-            this.usernameLabel = new System.Windows.Forms.Label();
-            this.usernameTextBox = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.tabControl.SuspendLayout();
@@ -244,6 +244,31 @@
             this.ClickToEmptyTextFieldCheckBox.UseVisualStyleBackColor = true;
             this.ClickToEmptyTextFieldCheckBox.CheckedChanged += new System.EventHandler(this.ClickToEmptyTextFieldCheckBox_CheckedChanged);
             // 
+            // usernameLabel
+            // 
+            this.usernameLabel.AutoSize = true;
+            this.generalSettingsTableLayout.SetColumnSpan(this.usernameLabel, 2);
+            this.usernameLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.usernameLabel.Location = new System.Drawing.Point(3, 102);
+            this.usernameLabel.Name = "usernameLabel";
+            this.usernameLabel.Size = new System.Drawing.Size(320, 51);
+            this.usernameLabel.TabIndex = 3;
+            this.usernameLabel.Text = "Username :";
+            this.usernameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // usernameTextBox
+            // 
+            this.generalSettingsTableLayout.SetColumnSpan(this.usernameTextBox, 2);
+            this.usernameTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.usernameTextBox.Location = new System.Drawing.Point(329, 105);
+            this.usernameTextBox.Name = "usernameTextBox";
+            this.usernameTextBox.Size = new System.Drawing.Size(320, 31);
+            this.usernameTextBox.TabIndex = 4;
+            this.usernameTextBox.Text = "Example : Anon";
+            this.usernameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.usernameTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.usernameTextBox_MouseClick);
+            this.usernameTextBox.TextChanged += new System.EventHandler(this.usernameTextBox_TextChanged);
+            // 
             // dataBaseSettingsTab
             // 
             this.dataBaseSettingsTab.Controls.Add(this.databaseSettingsTableLayout);
@@ -425,31 +450,6 @@
             this.onlineDatabaseCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.onlineDatabaseCheckBox.UseVisualStyleBackColor = true;
             this.onlineDatabaseCheckBox.CheckedChanged += new System.EventHandler(this.onlineDatabaseCheckBox_CheckedChanged);
-            // 
-            // usernameLabel
-            // 
-            this.usernameLabel.AutoSize = true;
-            this.generalSettingsTableLayout.SetColumnSpan(this.usernameLabel, 2);
-            this.usernameLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.usernameLabel.Location = new System.Drawing.Point(3, 102);
-            this.usernameLabel.Name = "usernameLabel";
-            this.usernameLabel.Size = new System.Drawing.Size(320, 51);
-            this.usernameLabel.TabIndex = 3;
-            this.usernameLabel.Text = "Username :";
-            this.usernameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // usernameTextBox
-            // 
-            this.generalSettingsTableLayout.SetColumnSpan(this.usernameTextBox, 2);
-            this.usernameTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.usernameTextBox.Location = new System.Drawing.Point(329, 105);
-            this.usernameTextBox.Name = "usernameTextBox";
-            this.usernameTextBox.Size = new System.Drawing.Size(320, 31);
-            this.usernameTextBox.TabIndex = 4;
-            this.usernameTextBox.Text = "Example : Anon";
-            this.usernameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.usernameTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.usernameTextBox_MouseClick);
-            this.usernameTextBox.TextChanged += new System.EventHandler(this.usernameTextBox_TextChanged);
             // 
             // MainSettings
             // 

@@ -62,6 +62,7 @@ namespace FRC_Scouting
                             aan.Show();
                             this.Hide();
                             break;
+
                         case 2:
                             this.Hide();
                             break;
