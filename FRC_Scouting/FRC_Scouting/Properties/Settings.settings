@@ -21,7 +21,7 @@
       <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="username" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Anon</Value>
+      <Value Profile="(Default)">Anonymous</Value>
     </Setting>
   </Settings>
 </SettingsFile>

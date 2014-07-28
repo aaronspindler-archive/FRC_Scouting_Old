@@ -264,7 +264,7 @@
             this.usernameTextBox.Name = "usernameTextBox";
             this.usernameTextBox.Size = new System.Drawing.Size(320, 31);
             this.usernameTextBox.TabIndex = 4;
-            this.usernameTextBox.Text = "Example : Anon";
+            this.usernameTextBox.Text = "Example : Anonymous";
             this.usernameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.usernameTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.usernameTextBox_MouseClick);
             this.usernameTextBox.TextChanged += new System.EventHandler(this.usernameTextBox_TextChanged);

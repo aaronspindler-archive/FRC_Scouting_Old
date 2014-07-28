@@ -97,7 +97,7 @@ namespace FRC_Scouting.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Anon")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Anonymous")]
         public string username {
             get {
                 return ((string)(this["username"]));
