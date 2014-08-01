@@ -1,6 +1,6 @@
-﻿using FRC_Scouting.Properties;
-using System;
+﻿using System;
 using System.Windows.Forms;
+using FRC_Scouting.Properties;
 
 namespace FRC_Scouting
 {
@@ -141,7 +141,9 @@ namespace FRC_Scouting
 
         private void MainSettings_Load(object sender, EventArgs e)
         {
-            MessageBox.Show("Warning: At the moment the usename and password fields for databases are stored in plain text on your computer. Please be cautious.","Warning");
+            MessageBox.Show(
+                "Warning: At the moment the usename and password fields for databases are stored in plain text on your computer. Please be cautious.",
+                "Warning");
             usernameTextBox.Text = Settings.Default.username;
             if (Settings.Default.ClickToDeleteTextField)
             {

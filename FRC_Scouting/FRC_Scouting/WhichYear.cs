@@ -5,14 +5,14 @@ namespace FRC_Scouting
 {
     public partial class WhichYear : Form
     {
+        private readonly UsefulSnippets us = new UsefulSnippets();
+        private int whichToOpen;
+        private Boolean yearSelected;
+
         public WhichYear()
         {
             InitializeComponent();
         }
-
-        private int whichToOpen;
-        private Boolean yearSelected = false;
-        private UsefulSnippets us = new UsefulSnippets();
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -47,24 +47,19 @@ namespace FRC_Scouting
             }
             else
             {
-                if (yearSelected == true)
+                if (yearSelected)
                 {
                     switch (whichToOpen)
                     {
                         case 0:
-                            var aao = new AerialAssist_Oshawa();
-                            aao.Show();
-                            this.Hide();
+                            var aan = new AerialAssist_Nipissing();
+                            aan.Show();
+                            Hide();
                             break;
 
                         case 1:
-                            var aan = new AerialAssist_Nipissing();
-                            aan.Show();
-                            this.Hide();
-                            break;
-
-                        case 2:
-                            this.Hide();
+                            MessageBox.Show("The event for 2015 has not yet been decided", "Error", MessageBoxButtons.OK,
+                                MessageBoxIcon.Error);
                             break;
                     }
                 }
@@ -73,7 +68,6 @@ namespace FRC_Scouting
 
         private void WhichYear_Load(object sender, EventArgs e)
         {
-            whichYearComboBox.Items.Add("2013-2014 | Aerial Assist | Oshawa");
             whichYearComboBox.Items.Add("2013-2014 | Aerial Assist | Nipissing");
             whichYearComboBox.Items.Add("2014-2015 | Undecieded");
         }

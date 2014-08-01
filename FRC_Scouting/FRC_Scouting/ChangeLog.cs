@@ -1,6 +1,8 @@
-﻿namespace FRC_Scouting
+﻿using General_Form;
+
+namespace FRC_Scouting
 {
-    public partial class ChangeLog : General_Form.GeneralForm
+    public partial class ChangeLog : GeneralForm
     {
         public ChangeLog()
         {
