@@ -79,7 +79,7 @@
             this.tableLayoutPanel1.Controls.Add(this.tabControl, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 9;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
@@ -129,7 +129,7 @@
             this.tabControl.Controls.Add(this.dataBaseSettingsTab);
             this.tabControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl.Location = new System.Drawing.Point(2, 28);
-            this.tabControl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControl.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl.Name = "tabControl";
             this.tableLayoutPanel1.SetRowSpan(this.tabControl, 8);
             this.tabControl.SelectedIndex = 0;
@@ -140,9 +140,9 @@
             // 
             this.generalSettingsTab.Controls.Add(this.generalSettingsTableLayout);
             this.generalSettingsTab.Location = new System.Drawing.Point(4, 22);
-            this.generalSettingsTab.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.generalSettingsTab.Margin = new System.Windows.Forms.Padding(2);
             this.generalSettingsTab.Name = "generalSettingsTab";
-            this.generalSettingsTab.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.generalSettingsTab.Padding = new System.Windows.Forms.Padding(2);
             this.generalSettingsTab.Size = new System.Drawing.Size(326, 213);
             this.generalSettingsTab.TabIndex = 0;
             this.generalSettingsTab.Text = "Ganeral Settings";
@@ -164,7 +164,7 @@
             this.generalSettingsTableLayout.Controls.Add(this.usernameTextBox, 2, 2);
             this.generalSettingsTableLayout.Dock = System.Windows.Forms.DockStyle.Fill;
             this.generalSettingsTableLayout.Location = new System.Drawing.Point(2, 2);
-            this.generalSettingsTableLayout.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.generalSettingsTableLayout.Margin = new System.Windows.Forms.Padding(2);
             this.generalSettingsTableLayout.Name = "generalSettingsTableLayout";
             this.generalSettingsTableLayout.RowCount = 8;
             this.generalSettingsTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
@@ -221,7 +221,7 @@
             this.generalSettingsTableLayout.SetColumnSpan(this.clearAllSettingsButton, 2);
             this.clearAllSettingsButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.clearAllSettingsButton.Location = new System.Drawing.Point(162, 2);
-            this.clearAllSettingsButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.clearAllSettingsButton.Margin = new System.Windows.Forms.Padding(2);
             this.clearAllSettingsButton.Name = "clearAllSettingsButton";
             this.clearAllSettingsButton.Size = new System.Drawing.Size(158, 22);
             this.clearAllSettingsButton.TabIndex = 1;
@@ -236,7 +236,7 @@
             this.generalSettingsTableLayout.SetColumnSpan(this.ClickToEmptyTextFieldCheckBox, 2);
             this.ClickToEmptyTextFieldCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ClickToEmptyTextFieldCheckBox.Location = new System.Drawing.Point(162, 28);
-            this.ClickToEmptyTextFieldCheckBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ClickToEmptyTextFieldCheckBox.Margin = new System.Windows.Forms.Padding(2);
             this.ClickToEmptyTextFieldCheckBox.Name = "ClickToEmptyTextFieldCheckBox";
             this.ClickToEmptyTextFieldCheckBox.Size = new System.Drawing.Size(158, 22);
             this.ClickToEmptyTextFieldCheckBox.TabIndex = 2;
@@ -261,7 +261,7 @@
             this.generalSettingsTableLayout.SetColumnSpan(this.usernameTextBox, 2);
             this.usernameTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.usernameTextBox.Location = new System.Drawing.Point(162, 54);
-            this.usernameTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.usernameTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.usernameTextBox.Name = "usernameTextBox";
             this.usernameTextBox.Size = new System.Drawing.Size(158, 20);
             this.usernameTextBox.TabIndex = 4;
@@ -274,9 +274,9 @@
             // 
             this.dataBaseSettingsTab.Controls.Add(this.databaseSettingsTableLayout);
             this.dataBaseSettingsTab.Location = new System.Drawing.Point(4, 22);
-            this.dataBaseSettingsTab.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataBaseSettingsTab.Margin = new System.Windows.Forms.Padding(2);
             this.dataBaseSettingsTab.Name = "dataBaseSettingsTab";
-            this.dataBaseSettingsTab.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataBaseSettingsTab.Padding = new System.Windows.Forms.Padding(2);
             this.dataBaseSettingsTab.Size = new System.Drawing.Size(326, 213);
             this.dataBaseSettingsTab.TabIndex = 1;
             this.dataBaseSettingsTab.Text = "Database Settings";
@@ -301,7 +301,7 @@
             this.databaseSettingsTableLayout.Controls.Add(this.onlineDatabaseCheckBox, 0, 0);
             this.databaseSettingsTableLayout.Dock = System.Windows.Forms.DockStyle.Fill;
             this.databaseSettingsTableLayout.Location = new System.Drawing.Point(2, 2);
-            this.databaseSettingsTableLayout.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.databaseSettingsTableLayout.Margin = new System.Windows.Forms.Padding(2);
             this.databaseSettingsTableLayout.Name = "databaseSettingsTableLayout";
             this.databaseSettingsTableLayout.RowCount = 6;
             this.databaseSettingsTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
@@ -320,7 +320,7 @@
             this.databaseSettingsTableLayout.SetColumnSpan(this.databasePasswordTextBox, 2);
             this.databasePasswordTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.databasePasswordTextBox.Location = new System.Drawing.Point(162, 138);
-            this.databasePasswordTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.databasePasswordTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.databasePasswordTextBox.Name = "databasePasswordTextBox";
             this.databasePasswordTextBox.Size = new System.Drawing.Size(158, 20);
             this.databasePasswordTextBox.TabIndex = 5;
@@ -334,7 +334,7 @@
             this.databaseSettingsTableLayout.SetColumnSpan(this.databaseUsernameTextBox, 2);
             this.databaseUsernameTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.databaseUsernameTextBox.Location = new System.Drawing.Point(162, 104);
-            this.databaseUsernameTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.databaseUsernameTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.databaseUsernameTextBox.Name = "databaseUsernameTextBox";
             this.databaseUsernameTextBox.Size = new System.Drawing.Size(158, 20);
             this.databaseUsernameTextBox.TabIndex = 4;
@@ -348,7 +348,7 @@
             this.databaseSettingsTableLayout.SetColumnSpan(this.databasePortTextBox, 2);
             this.databasePortTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.databasePortTextBox.Location = new System.Drawing.Point(162, 70);
-            this.databasePortTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.databasePortTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.databasePortTextBox.Name = "databasePortTextBox";
             this.databasePortTextBox.Size = new System.Drawing.Size(158, 20);
             this.databasePortTextBox.TabIndex = 3;
@@ -362,7 +362,7 @@
             this.databaseSettingsTableLayout.SetColumnSpan(this.databaseHostTextBox, 2);
             this.databaseHostTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.databaseHostTextBox.Location = new System.Drawing.Point(162, 36);
-            this.databaseHostTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.databaseHostTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.databaseHostTextBox.Name = "databaseHostTextBox";
             this.databaseHostTextBox.Size = new System.Drawing.Size(158, 20);
             this.databaseHostTextBox.TabIndex = 2;
@@ -402,7 +402,7 @@
             this.databaseSettingsTableLayout.SetColumnSpan(this.saveDatabaseSettingsButton, 2);
             this.saveDatabaseSettingsButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.saveDatabaseSettingsButton.Location = new System.Drawing.Point(82, 172);
-            this.saveDatabaseSettingsButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.saveDatabaseSettingsButton.Margin = new System.Windows.Forms.Padding(2);
             this.saveDatabaseSettingsButton.Name = "saveDatabaseSettingsButton";
             this.saveDatabaseSettingsButton.Size = new System.Drawing.Size(156, 35);
             this.saveDatabaseSettingsButton.TabIndex = 6;
@@ -443,7 +443,7 @@
             this.databaseSettingsTableLayout.SetColumnSpan(this.onlineDatabaseCheckBox, 4);
             this.onlineDatabaseCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.onlineDatabaseCheckBox.Location = new System.Drawing.Point(2, 2);
-            this.onlineDatabaseCheckBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.onlineDatabaseCheckBox.Margin = new System.Windows.Forms.Padding(2);
             this.onlineDatabaseCheckBox.Name = "onlineDatabaseCheckBox";
             this.onlineDatabaseCheckBox.Size = new System.Drawing.Size(318, 30);
             this.onlineDatabaseCheckBox.TabIndex = 1;
@@ -461,7 +461,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "MainSettings";
             this.Text = "Main Settings";
