@@ -62,7 +62,7 @@
             this.ClientSize = new System.Drawing.Size(810, 594);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "AerialAssist_Nipissing";
-            this.Text = "Aerial Assist | Nipissing";
+            this.Text = "a";
             this.Controls.SetChildIndex(this.tableLayoutPanel1, 0);
             this.ResumeLayout(false);
 
