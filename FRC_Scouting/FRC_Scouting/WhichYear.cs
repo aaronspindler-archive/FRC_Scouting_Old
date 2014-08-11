@@ -68,8 +68,8 @@ namespace FRC_Scouting
 
         private void WhichYear_Load(object sender, EventArgs e)
         {
-            whichYearComboBox.Items.Add("2013-2014 | Aerial Assist | Nipissing");
-            whichYearComboBox.Items.Add("2014-2015 | Undecieded");
+            whichYearComboBox.Items.Add("2014 | Aerial Assist | Nipissing");
+            whichYearComboBox.Items.Add("Not Yet Decided");
         }
 
         private void settingsToolStripMenuItem_Click(object sender, EventArgs e)

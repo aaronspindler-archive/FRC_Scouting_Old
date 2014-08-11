@@ -106,5 +106,17 @@ namespace FRC_Scouting.Properties {
                 this["username"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool unencryptedDataWarning {
+            get {
+                return ((bool)(this["unencryptedDataWarning"]));
+            }
+            set {
+                this["unencryptedDataWarning"] = value;
+            }
+        }
     }
 }
