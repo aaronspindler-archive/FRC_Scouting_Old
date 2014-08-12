@@ -45,6 +45,7 @@
             this.teamNumberDisplay = new System.Windows.Forms.Label();
             this.teamLocationLabel = new System.Windows.Forms.Label();
             this.teamLocationDisplay = new System.Windows.Forms.Label();
+            this.eventInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -85,7 +86,8 @@
             this.tableLayoutPanel1.SetColumnSpan(this.menuStrip1, 4);
             this.menuStrip1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem});
+            this.fileToolStripMenuItem,
+            this.eventInformationToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(196, 25);
@@ -280,6 +282,12 @@
             this.teamLocationDisplay.TabIndex = 6;
             this.teamLocationDisplay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // eventInformationToolStripMenuItem
+            // 
+            this.eventInformationToolStripMenuItem.Name = "eventInformationToolStripMenuItem";
+            this.eventInformationToolStripMenuItem.Size = new System.Drawing.Size(114, 21);
+            this.eventInformationToolStripMenuItem.Text = "Event Information";
+            // 
             // AerialAssist_NorthBay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -323,5 +331,6 @@
         private System.Windows.Forms.Label teamNumberDisplay;
         private System.Windows.Forms.Label teamLocationLabel;
         private System.Windows.Forms.Label teamLocationDisplay;
+        private System.Windows.Forms.ToolStripMenuItem eventInformationToolStripMenuItem;
     }
 }
