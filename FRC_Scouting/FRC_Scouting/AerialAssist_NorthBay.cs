@@ -8,7 +8,6 @@ namespace FRC_Scouting
         private string selectedTeamName;
         private int selectedTeamNumber;
         private string selectedTeamLocation;
-        private int selectedTeamSlot;
 
         public AerialAssist_NorthBay()
         {
@@ -252,6 +251,10 @@ namespace FRC_Scouting
                     selectedTeamLocation = ("Haliburton, ON, Canada");
                     break;
             }
+
+            teamNameDisplay.Text = (selectedTeamName);
+            teamNumberDisplay.Text = Convert.ToString(selectedTeamNumber);
+            teamLocationDisplay.Text = (selectedTeamLocation);
         }
     }
 }
