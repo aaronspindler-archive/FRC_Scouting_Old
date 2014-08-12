@@ -52,7 +52,7 @@ namespace FRC_Scouting
                     switch (whichToOpen)
                     {
                         case 0:
-                            var aan = new AerialAssist_Nipissing();
+                            var aan = new AerialAssist_NorthBay();
                             aan.Show();
                             Hide();
                             break;
@@ -68,7 +68,7 @@ namespace FRC_Scouting
 
         private void WhichYear_Load(object sender, EventArgs e)
         {
-            whichYearComboBox.Items.Add("2014 | Aerial Assist | Nipissing");
+            whichYearComboBox.Items.Add("2014 | Aerial Assist | NorthBay");
             whichYearComboBox.Items.Add("Not Yet Decided");
         }
 
