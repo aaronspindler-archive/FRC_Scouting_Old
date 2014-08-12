@@ -169,10 +169,6 @@
       <Project>{9862B9F1-5BC2-411F-A373-103DC585BDE9}</Project>
       <Name>GeneralForm</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ScoutingFormBase\ScoutingFormBase.csproj">
-      <Project>{5CF52D92-015E-4B29-9601-A75604A762BC}</Project>
-      <Name>ScoutingFormBase</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">
