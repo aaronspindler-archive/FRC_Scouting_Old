@@ -7,7 +7,7 @@ namespace FRC_Scouting
     {
         private string selectedTeamName;
         private int selectedTeamNumber;
-        private int selectedTeamLocation;
+        private string selectedTeamLocation;
         private int selectedTeamSlot;
 
         public AerialAssist_NorthBay()
@@ -28,6 +28,7 @@ namespace FRC_Scouting
         private void AerialAssist_Nipissing_Load(object sender, EventArgs e)
         {
             //Loading Team Names
+            //36 Teams
             teamSelector.Items.Add("188 | Blizzard");
             teamSelector.Items.Add("610 | The Coyotes");
             teamSelector.Items.Add("772 | Sabre Bytes");
@@ -70,73 +71,324 @@ namespace FRC_Scouting
         {
             if (teamSelector.SelectedIndex == 0)
             {
-                
+                selectedTeamName = ("Blizzard");
+                selectedTeamNumber = 188;
+                selectedTeamLocation = ("Toronto, ON, Canada");
+
             }
             else
             {
                 if (teamSelector.SelectedIndex == 1)
                 {
-                    
+                    selectedTeamName = ("The Coyotes");
+                    selectedTeamNumber = 610;
+                    selectedTeamLocation = ("Toronto, ON, Canada");
                 }
                 else
                 {
                     if (teamSelector.SelectedIndex == 2)
                     {
-                        
+                        selectedTeamName = ("Sabre Bytes");
+                        selectedTeamNumber = 772;
+                        selectedTeamLocation = ("LaSalle, ON, Canada");
                     }
                     else
                     {
                         if (teamSelector.SelectedIndex == 3)
                         {
-                            
+                            selectedTeamName = ("Ice Cubed");
+                            selectedTeamNumber = 1305;
+                            selectedTeamLocation = ("North Bay, ON, Canada");
                         }
                         else
                         {
                             if (teamSelector.SelectedIndex == 4)
                             {
-                                
+                                selectedTeamName = ("RUNNYMEDE ROBOTICS");
+                                selectedTeamNumber = 1310;
+                                selectedTeamLocation = ("Toronto, ON, Canada");
                             }
                             else
                             {
                                 if (teamSelector.SelectedIndex == 5)
                                 {
-                                    
+                                    selectedTeamName = ("Inverse Paradox");
+                                    selectedTeamNumber = 1325;
+                                    selectedTeamLocation = ("Mississauga, ON, Canada");
                                 }
                                 else
                                 {
                                     if (teamSelector.SelectedIndex == 6)
                                     {
-                                        
+                                        selectedTeamName = ("Red Devils");
+                                        selectedTeamNumber = 1334;
+                                        selectedTeamLocation = ("Oakville, ON, Canada");
                                     }
                                     else
                                     {
                                         if (teamSelector.SelectedIndex == 7)
                                         {
-                                            
+                                            selectedTeamName = ("RoboHawks");
+                                            selectedTeamNumber = 1605;
+                                            selectedTeamLocation = ("Toronto, ON, Canada");
                                         }
                                         else
                                         {
                                             if (teamSelector.SelectedIndex == 8)
                                             {
-                                                
+                                                selectedTeamName = ("Cybergnomes");
+                                                selectedTeamNumber = 2013;
+                                                selectedTeamLocation = ("Stayner, ON, Canada");
                                             }
                                             else
                                             {
                                                 if (teamSelector.SelectedIndex == 9)
                                                 {
-                                                    
+                                                    selectedTeamName = ("MMRambotics");
+                                                    selectedTeamNumber = 2200;
+                                                    selectedTeamLocation = ("Burlington, ON, Canada");
                                                 }
                                                 else
                                                 {
                                                     if (teamSelector.SelectedIndex == 10)
                                                     {
-                                                        
+                                                        selectedTeamName = ("Trojans");
+                                                        selectedTeamNumber = 2386;
+                                                        selectedTeamLocation = ("Burlington, ON, Canada");
                                                     }
                                                     else
                                                     {
                                                         if (teamSelector.SelectedIndex == 11)
                                                         {
-                                                            
+                                                            selectedTeamName = ("BeaverworX");
+                                                            selectedTeamNumber = 2609;
+                                                            selectedTeamLocation = ("Guelph, ON, Canada");
+                                                        }
+                                                        else
+                                                        {
+                                                            if (teamSelector.SelectedIndex == 12)
+                                                            {
+                                                                selectedTeamName = ("ASTECHZ");
+                                                                selectedTeamNumber = 2994;
+                                                                selectedTeamLocation = ("Kanata, ON, Canada");
+                                                            }
+                                                            else
+                                                            {
+                                                                if (teamSelector.SelectedIndex == 13)
+                                                                {
+                                                                    selectedTeamName = ("C4 Robotics");
+                                                                    selectedTeamNumber = 3543;
+                                                                    selectedTeamLocation = ("Arnprior, ON, Canada");
+                                                                }
+                                                                else
+                                                                {
+                                                                    if (teamSelector.SelectedIndex == 14)
+                                                                    {
+                                                                        selectedTeamName = ("Milton Mustangs");
+                                                                        selectedTeamNumber = 3571;
+                                                                        selectedTeamLocation = ("Milton, ON, Canada");
+                                                                    }
+                                                                    else
+                                                                    {
+                                                                        if (teamSelector.SelectedIndex == 15)
+                                                                        {
+                                                                            selectedTeamName = ("FSS Cyber Falcons");
+                                                                            selectedTeamNumber = 3710;
+                                                                            selectedTeamLocation = ("Kingston, ON, Canada");
+                                                                        }
+                                                                        else
+                                                                        {
+                                                                            if (teamSelector.SelectedIndex == 16)
+                                                                            {
+                                                                                selectedTeamName = ("Retro-Rams");
+                                                                                selectedTeamNumber = 4001;
+                                                                                selectedTeamLocation = ("Thornhill, ON, Canada");
+                                                                            }
+                                                                            else
+                                                                            {
+                                                                                if (teamSelector.SelectedIndex == 17)
+                                                                                {
+                                                                                    selectedTeamName = ("Lo-Ellen Robotics");
+                                                                                    selectedTeamNumber = 4069;
+                                                                                    selectedTeamLocation = ("Sudbury, ON, Canada");
+                                                                                }
+                                                                                else
+                                                                                {
+                                                                                    if (teamSelector.SelectedIndex == 18)
+                                                                                    {
+                                                                                        selectedTeamName = ("Hoya Robotics");
+                                                                                        selectedTeamNumber = 4152;
+                                                                                        selectedTeamLocation = ("Huntsville, ON, Canada");
+                                                                                    }
+                                                                                    else
+                                                                                    {
+                                                                                        if (teamSelector.SelectedIndex == 19)
+                                                                                        {
+                                                                                            selectedTeamName = ("MaxTech");
+                                                                                            selectedTeamNumber = 4343;
+                                                                                            selectedTeamLocation = ("Aurora, ON, Canada");
+                                                                                        }
+                                                                                        else
+                                                                                        {
+                                                                                            if (teamSelector.SelectedIndex == 20)
+                                                                                            {
+                                                                                                selectedTeamName = ("W.A.F.F.L.E.S.");
+                                                                                                selectedTeamNumber = 4476;
+                                                                                                selectedTeamLocation = ("Kingston, ON, Canada");
+                                                                                            }
+                                                                                            else
+                                                                                            {
+                                                                                                if (teamSelector.SelectedIndex == 21)
+                                                                                                {
+                                                                                                    selectedTeamName = ("Northern Lights Robotics");
+                                                                                                    selectedTeamNumber = 4704;
+                                                                                                    selectedTeamLocation = ("Timmins, ON, Canada");
+                                                                                                }
+                                                                                                else
+                                                                                                {
+                                                                                                    if (teamSelector.SelectedIndex == 22)
+                                                                                                    {
+                                                                                                        selectedTeamName = ("RoBenedicts");
+                                                                                                        selectedTeamNumber = 4754;
+                                                                                                        selectedTeamLocation = ("Sudbury, ON, Canada");
+                                                                                                    }
+                                                                                                    else
+                                                                                                    {
+                                                                                                        if (teamSelector.SelectedIndex == 23)
+                                                                                                        {
+                                                                                                            selectedTeamName = ("The Wildebots");
+                                                                                                            selectedTeamNumber = 4902;
+                                                                                                            selectedTeamLocation = ("Burlington, ON, Canada");
+                                                                                                        }
+                                                                                                        else
+                                                                                                        {
+                                                                                                            if (teamSelector.SelectedIndex == 24)
+                                                                                                            {
+                                                                                                                selectedTeamName = ("Panthers");
+                                                                                                                selectedTeamNumber = 4914;
+                                                                                                                selectedTeamLocation = ("Toronto, ON, Canada");
+                                                                                                            }
+                                                                                                            else
+                                                                                                            {
+                                                                                                                if (teamSelector.SelectedIndex == 25)
+                                                                                                                {
+                                                                                                                    selectedTeamName = ("ALPHA DOGS");
+                                                                                                                    selectedTeamNumber = 4946;
+                                                                                                                    selectedTeamLocation = ("Bolton, ON, Canada");
+                                                                                                                }
+                                                                                                                else
+                                                                                                                {
+                                                                                                                    if (teamSelector.SelectedIndex == 26)
+                                                                                                                    {
+                                                                                                                        selectedTeamName = ("CDS Cyclones");
+                                                                                                                        selectedTeamNumber = 4951;
+                                                                                                                        selectedTeamLocation = ("King, ON, Canada");
+                                                                                                                    }
+                                                                                                                    else
+                                                                                                                    {
+                                                                                                                        if (teamSelector.SelectedIndex == 27)
+                                                                                                                        {
+                                                                                                                            selectedTeamName = ("RoboHawks");
+                                                                                                                            selectedTeamNumber = 4968;
+                                                                                                                            selectedTeamLocation = ("Lively, ON, Canada");
+                                                                                                                        }
+                                                                                                                        else
+                                                                                                                        {
+                                                                                                                            if (teamSelector.SelectedIndex == 28)
+                                                                                                                            {
+                                                                                                                                selectedTeamName = ("Rebels");
+                                                                                                                                selectedTeamNumber = 4976;
+                                                                                                                                selectedTeamLocation = ("Georgetown, ON, Canada");
+                                                                                                                            }
+                                                                                                                            else
+                                                                                                                            {
+                                                                                                                                if (teamSelector.SelectedIndex == 29)
+                                                                                                                                {
+                                                                                                                                    selectedTeamName = ("Spartans");
+                                                                                                                                    selectedTeamNumber = 4992;
+                                                                                                                                    selectedTeamLocation = ("Milton, ON, Canada");
+                                                                                                                                }
+                                                                                                                                else
+                                                                                                                                {
+                                                                                                                                    if (teamSelector.SelectedIndex == 30)
+                                                                                                                                    {
+                                                                                                                                        selectedTeamName = ("eNimkii");
+                                                                                                                                        selectedTeamNumber = 5035;
+                                                                                                                                        selectedTeamLocation = ("North Bay, ON, Canada");
+                                                                                                                                    }
+                                                                                                                                    else
+                                                                                                                                    {
+                                                                                                                                        if (teamSelector.SelectedIndex == 31)
+                                                                                                                                        {
+                                                                                                                                            selectedTeamName = ("Stormbots");
+                                                                                                                                            selectedTeamNumber = 5076;
+                                                                                                                                            selectedTeamLocation = ("Ajax, ON, Canada");
+                                                                                                                                        }
+                                                                                                                                        else
+                                                                                                                                        {
+                                                                                                                                            if (teamSelector.SelectedIndex == 32)
+                                                                                                                                            {
+                                                                                                                                                selectedTeamName = ("Roboprime Cardinals");
+                                                                                                                                                selectedTeamNumber = 5157;
+                                                                                                                                                selectedTeamLocation = ("Sudbury, ON, Canada");
+                                                                                                                                            }
+                                                                                                                                            else
+                                                                                                                                            {
+                                                                                                                                                if (teamSelector.SelectedIndex == 33)
+                                                                                                                                                {
+                                                                                                                                                    selectedTeamName = ("Gators");
+                                                                                                                                                    selectedTeamNumber = 5164;
+                                                                                                                                                    selectedTeamLocation = ("Sudbury, ON, Canada");
+                                                                                                                                                }
+                                                                                                                                                else
+                                                                                                                                                {
+                                                                                                                                                    if (teamSelector.SelectedIndex == 34)
+                                                                                                                                                    {
+                                                                                                                                                        selectedTeamName = ("LANCERobotics");
+                                                                                                                                                        selectedTeamNumber = 5191;
+                                                                                                                                                        selectedTeamLocation = ("Sudbury, ON, Canada");
+                                                                                                                                                    }
+                                                                                                                                                    else
+                                                                                                                                                    {
+                                                                                                                                                        if (teamSelector.SelectedIndex == 35)
+                                                                                                                                                        {
+                                                                                                                                                            selectedTeamName = ("Hawks");
+                                                                                                                                                            selectedTeamNumber = 5324;
+                                                                                                                                                            selectedTeamLocation = ("Haliburton, ON, Canada");
+                                                                                                                                                        }
+                                                                                                                                                        
+                                                                                                                                                    }
+                                                                                                                                                    
+                                                                                                                                                }
+                                                                                                                                                
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                        }
+                                                                                                                                        
+                                                                                                                                    }
+                                                                                                                                    
+                                                                                                                                }
+                                                                                                                                
+                                                                                                                            }
+                                                                                                                            
+                                                                                                                        }
+                                                                                                                        
+                                                                                                                    }
+                                                                                                                    
+                                                                                                                }
+                                                                                                            }
+                                                                                                        }
+                                                                                                    }
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
                                                         }
                                                     }
                                                 }
