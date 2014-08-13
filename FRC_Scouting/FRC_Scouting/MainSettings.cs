@@ -1,7 +1,6 @@
-﻿using System;
+﻿using FRC_Scouting.Properties;
+using System;
 using System.Windows.Forms;
-using System.Windows.Forms.VisualStyles;
-using FRC_Scouting.Properties;
 
 namespace FRC_Scouting
 {
@@ -142,15 +141,18 @@ namespace FRC_Scouting
 
         private void MainSettings_Load(object sender, EventArgs e)
         {
-            if (FRC_Scouting.Properties.Settings.Default.unencryptedDataWarning == true)
+            if (Settings.Default.unencryptedDataWarning)
             {
-                if (MessageBox.Show("Warning: At the moment the usename and password fields for databases are stored in plain text on your computer. Do you want this messagebox to show up again?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+                if (
+                    MessageBox.Show(
+                        "Warning: At the moment the usename and password fields for databases are stored in plain text on your computer. Do you want this messagebox to show up again?",
+                        "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
                 {
-                    FRC_Scouting.Properties.Settings.Default.unencryptedDataWarning = true;
+                    Settings.Default.unencryptedDataWarning = true;
                 }
                 else
                 {
-                    FRC_Scouting.Properties.Settings.Default.unencryptedDataWarning = false;
+                    Settings.Default.unencryptedDataWarning = false;
                 }
             }
 

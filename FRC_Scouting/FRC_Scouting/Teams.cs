@@ -1,18 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
+﻿using General_Form;
+using System;
 
 namespace FRC_Scouting
 {
-    public partial class Teams : General_Form.GeneralForm
+    public partial class Teams : GeneralForm
     {
         public Teams()
         {
             InitializeComponent();
+        }
+
+        private void Teams_Load(object sender, EventArgs e)
+        {
         }
     }
 }

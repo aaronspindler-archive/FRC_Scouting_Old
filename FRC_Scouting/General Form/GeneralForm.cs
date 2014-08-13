@@ -6,7 +6,7 @@ namespace General_Form
 {
     public partial class GeneralForm : Form
     {
-        private UsefulSnippets us = new UsefulSnippets();
+        private readonly UsefulSnippets us = new UsefulSnippets();
 
         public GeneralForm()
         {
@@ -27,7 +27,7 @@ namespace General_Form
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Close();
         }
     }
 }

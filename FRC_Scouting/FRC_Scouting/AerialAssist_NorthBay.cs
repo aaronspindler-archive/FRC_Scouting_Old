@@ -5,9 +5,9 @@ namespace FRC_Scouting
 {
     public partial class AerialAssist_NorthBay : Form
     {
+        private string selectedTeamLocation;
         private string selectedTeamName;
         private int selectedTeamNumber;
-        private string selectedTeamLocation;
 
         public AerialAssist_NorthBay()
         {
@@ -75,176 +75,211 @@ namespace FRC_Scouting
                     selectedTeamNumber = 188;
                     selectedTeamLocation = ("Toronto, ON, Canada");
                     break;
+
                 case 1:
                     selectedTeamName = ("The Coyotes");
                     selectedTeamNumber = 610;
                     selectedTeamLocation = ("Toronto, ON, Canada");
                     break;
+
                 case 2:
                     selectedTeamName = ("Sabre Bytes");
                     selectedTeamNumber = 772;
                     selectedTeamLocation = ("LaSalle, ON, Canada");
                     break;
+
                 case 3:
                     selectedTeamName = ("Ice Cubed");
                     selectedTeamNumber = 1305;
                     selectedTeamLocation = ("North Bay, ON, Canada");
                     break;
+
                 case 4:
                     selectedTeamName = ("RUNNYMEDE ROBOTICS");
                     selectedTeamNumber = 1310;
                     selectedTeamLocation = ("Toronto, ON, Canada");
                     break;
+
                 case 5:
                     selectedTeamName = ("Inverse Paradox");
                     selectedTeamNumber = 1325;
                     selectedTeamLocation = ("Mississauga, ON, Canada");
                     break;
+
                 case 6:
                     selectedTeamName = ("Red Devils");
                     selectedTeamNumber = 1334;
                     selectedTeamLocation = ("Oakville, ON, Canada");
                     break;
+
                 case 7:
                     selectedTeamName = ("RoboHawks");
                     selectedTeamNumber = 1605;
                     selectedTeamLocation = ("Toronto, ON, Canada");
                     break;
+
                 case 8:
                     selectedTeamName = ("Cybergnomes");
                     selectedTeamNumber = 2013;
                     selectedTeamLocation = ("Stayner, ON, Canada");
                     break;
+
                 case 9:
                     selectedTeamName = ("MMRambotics");
                     selectedTeamNumber = 2200;
                     selectedTeamLocation = ("Burlington, ON, Canada");
                     break;
+
                 case 10:
                     selectedTeamName = ("Trojans");
                     selectedTeamNumber = 2386;
                     selectedTeamLocation = ("Burlington, ON, Canada");
                     break;
+
                 case 11:
                     selectedTeamName = ("BeaverworX");
                     selectedTeamNumber = 2609;
                     selectedTeamLocation = ("Guelph, ON, Canada");
                     break;
+
                 case 12:
                     selectedTeamName = ("ASTECHZ");
                     selectedTeamNumber = 2994;
                     selectedTeamLocation = ("Kanata, ON, Canada");
                     break;
+
                 case 13:
                     selectedTeamName = ("C4 Robotics");
                     selectedTeamNumber = 3543;
                     selectedTeamLocation = ("Arnprior, ON, Canada");
                     break;
+
                 case 14:
                     selectedTeamName = ("Milton Mustangs");
                     selectedTeamNumber = 3571;
                     selectedTeamLocation = ("Milton, ON, Canada");
                     break;
+
                 case 15:
                     selectedTeamName = ("FSS Cyber Falcons");
                     selectedTeamNumber = 3710;
                     selectedTeamLocation = ("Kingston, ON, Canada");
                     break;
+
                 case 16:
                     selectedTeamName = ("Retro-Rams");
                     selectedTeamNumber = 4001;
                     selectedTeamLocation = ("Thornhill, ON, Canada");
                     break;
+
                 case 17:
                     selectedTeamName = ("Lo-Ellen Robotics");
                     selectedTeamNumber = 4069;
                     selectedTeamLocation = ("Sudbury, ON, Canada");
                     break;
+
                 case 18:
                     selectedTeamName = ("Hoya Robotics");
                     selectedTeamNumber = 4152;
                     selectedTeamLocation = ("Huntsville, ON, Canada");
                     break;
+
                 case 19:
                     selectedTeamName = ("MaxTech");
                     selectedTeamNumber = 4343;
                     selectedTeamLocation = ("Aurora, ON, Canada");
                     break;
+
                 case 20:
                     selectedTeamName = ("W.A.F.F.L.E.S.");
                     selectedTeamNumber = 4476;
                     selectedTeamLocation = ("Kingston, ON, Canada");
                     break;
+
                 case 21:
                     selectedTeamName = ("Northern Lights Robotics");
                     selectedTeamNumber = 4704;
                     selectedTeamLocation = ("Timmins, ON, Canada");
                     break;
+
                 case 22:
                     selectedTeamName = ("RoBenedicts");
                     selectedTeamNumber = 4754;
                     selectedTeamLocation = ("Sudbury, ON, Canada");
                     break;
+
                 case 23:
                     selectedTeamName = ("The Wildebots");
                     selectedTeamNumber = 4902;
                     selectedTeamLocation = ("Burlington, ON, Canada");
                     break;
+
                 case 24:
                     selectedTeamName = ("Panthers");
                     selectedTeamNumber = 4914;
                     selectedTeamLocation = ("Toronto, ON, Canada");
                     break;
+
                 case 25:
                     selectedTeamName = ("ALPHA DOGS");
                     selectedTeamNumber = 4946;
                     selectedTeamLocation = ("Bolton, ON, Canada");
                     break;
+
                 case 26:
                     selectedTeamName = ("CDS Cyclones");
                     selectedTeamNumber = 4951;
                     selectedTeamLocation = ("King, ON, Canada");
                     break;
+
                 case 27:
                     selectedTeamName = ("RoboHawks");
                     selectedTeamNumber = 4968;
                     selectedTeamLocation = ("Lively, ON, Canada");
                     break;
+
                 case 28:
                     selectedTeamName = ("Rebels");
                     selectedTeamNumber = 4976;
                     selectedTeamLocation = ("Georgetown, ON, Canada");
                     break;
+
                 case 29:
                     selectedTeamName = ("Spartans");
                     selectedTeamNumber = 4992;
                     selectedTeamLocation = ("Milton, ON, Canada");
                     break;
+
                 case 30:
                     selectedTeamName = ("eNimkii");
                     selectedTeamNumber = 5035;
                     selectedTeamLocation = ("North Bay, ON, Canada");
                     break;
+
                 case 31:
                     selectedTeamName = ("Stormbots");
                     selectedTeamNumber = 5076;
                     selectedTeamLocation = ("Ajax, ON, Canada");
                     break;
+
                 case 32:
                     selectedTeamName = ("Roboprime Cardinals");
                     selectedTeamNumber = 5157;
                     selectedTeamLocation = ("Sudbury, ON, Canada");
                     break;
+
                 case 33:
                     selectedTeamName = ("Gators");
                     selectedTeamNumber = 5164;
                     selectedTeamLocation = ("Sudbury, ON, Canada");
                     break;
+
                 case 34:
                     selectedTeamName = ("LANCERobotics");
                     selectedTeamNumber = 5191;
                     selectedTeamLocation = ("Sudbury, ON, Canada");
                     break;
+
                 case 35:
                     selectedTeamName = ("Hawks");
                     selectedTeamNumber = 5324;
