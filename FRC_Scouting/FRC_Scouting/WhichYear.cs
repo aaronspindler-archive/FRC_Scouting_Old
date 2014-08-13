@@ -100,5 +100,11 @@ namespace FRC_Scouting
         {
             us.ClearSettings();
         }
+
+        private void teamsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var teams = new Teams();
+            teams.Show();
+        }
     }
 }

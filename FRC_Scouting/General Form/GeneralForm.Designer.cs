@@ -47,12 +47,13 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Controls.Add(this.currentTimeDisplay, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.menuStrip1, 0, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(739, 49);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(741, 49);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // currentTimeDisplay
@@ -60,9 +61,9 @@
             this.currentTimeDisplay.AutoSize = true;
             this.currentTimeDisplay.Dock = System.Windows.Forms.DockStyle.Fill;
             this.currentTimeDisplay.ForeColor = System.Drawing.Color.DarkRed;
-            this.currentTimeDisplay.Location = new System.Drawing.Point(372, 0);
+            this.currentTimeDisplay.Location = new System.Drawing.Point(373, 0);
             this.currentTimeDisplay.Name = "currentTimeDisplay";
-            this.currentTimeDisplay.Size = new System.Drawing.Size(364, 49);
+            this.currentTimeDisplay.Size = new System.Drawing.Size(365, 49);
             this.currentTimeDisplay.TabIndex = 1;
             this.currentTimeDisplay.Text = "Current Time : ";
             this.currentTimeDisplay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -73,7 +74,7 @@
             this.fileToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(369, 40);
+            this.menuStrip1.Size = new System.Drawing.Size(370, 40);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
