@@ -100,11 +100,11 @@
       <DependentUpon>ProgramInformation.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Teams.cs">
+    <Compile Include="Team_Directory.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Teams.Designer.cs">
-      <DependentUpon>Teams.cs</DependentUpon>
+    <Compile Include="Team_Directory.Designer.cs">
+      <DependentUpon>Team_Directory.cs</DependentUpon>
     </Compile>
     <Compile Include="UsefulSnippets.cs" />
     <Compile Include="WhichYear.cs">
@@ -138,8 +138,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Teams.resx">
-      <DependentUpon>Teams.cs</DependentUpon>
+    <EmbeddedResource Include="Team_Directory.resx">
+      <DependentUpon>Team_Directory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WhichYear.resx">
       <DependentUpon>WhichYear.cs</DependentUpon>
