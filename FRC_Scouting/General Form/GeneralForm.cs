@@ -1,6 +1,6 @@
-﻿using FRC_Scouting;
-using System;
+﻿using System;
 using System.Windows.Forms;
+using FRC_Scouting;
 
 namespace General_Form
 {

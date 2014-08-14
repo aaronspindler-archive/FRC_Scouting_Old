@@ -30,7 +30,7 @@ namespace FRC_Scouting
             //Variables
             var gen = new Random();
             string passwordToString = ("");
-            char[] numbers = { '1', '2', '3', '4', '5', '6', '7', '8', '9', '0' };
+            char[] numbers = {'1', '2', '3', '4', '5', '6', '7', '8', '9', '0'};
             char[] letters =
             {
                 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r',
@@ -51,7 +51,7 @@ namespace FRC_Scouting
                 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '1', '2', '3', '4', '5', '6', '7',
                 '8', '9', '0', '!', '@', '#', '$', '%', '^', '&', '*', '<', '>', '?'
             };
-            char[] passwordArray = { };
+            char[] passwordArray = {};
             var passwordList = new List<char>();
             int randomNumber = 0;
 

@@ -1,6 +1,6 @@
-﻿using FRC_Scouting.Properties;
-using System;
+﻿using System;
 using System.Windows.Forms;
+using FRC_Scouting.Properties;
 
 namespace FRC_Scouting
 {
