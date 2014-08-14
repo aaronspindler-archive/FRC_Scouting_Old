@@ -74,6 +74,12 @@
     <Compile Include="AerialAssist_NorthBay.Designer.cs">
       <DependentUpon>AerialAssist_NorthBay.cs</DependentUpon>
     </Compile>
+    <Compile Include="AerialAssist_NorthBay_Event_Information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AerialAssist_NorthBay_Event_Information.Designer.cs">
+      <DependentUpon>AerialAssist_NorthBay_Event_Information.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChangeLog.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +121,9 @@
     </Compile>
     <EmbeddedResource Include="AerialAssist_NorthBay.resx">
       <DependentUpon>AerialAssist_NorthBay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AerialAssist_NorthBay_Event_Information.resx">
+      <DependentUpon>AerialAssist_NorthBay_Event_Information.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChangeLog.resx">
       <DependentUpon>ChangeLog.cs</DependentUpon>
