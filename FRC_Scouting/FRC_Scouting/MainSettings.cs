@@ -4,6 +4,7 @@ using FRC_Scouting.Properties;
 
 namespace FRC_Scouting
 {
+    //@author xNovax
     public partial class MainSettings : Form
     {
         private readonly UsefulSnippets us = new UsefulSnippets();

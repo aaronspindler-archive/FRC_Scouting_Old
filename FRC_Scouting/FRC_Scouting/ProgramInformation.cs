@@ -5,6 +5,7 @@ using System.Windows.Forms;
 
 namespace FRC_Scouting
 {
+    //@author xNovax
     partial class ProgramInformation : Form
     {
         public ProgramInformation()

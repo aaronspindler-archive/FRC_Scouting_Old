@@ -6,6 +6,7 @@ using FRC_Scouting.Properties;
 
 namespace FRC_Scouting
 {
+    //@author xNovax
     internal class UsefulSnippets
     {
         public void ErrorOccured(string error)
