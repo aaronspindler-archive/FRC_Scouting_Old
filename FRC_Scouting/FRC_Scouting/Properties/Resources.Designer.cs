@@ -59,5 +59,15 @@ namespace FRC_Scouting.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap northbay_event_picture {
+            get {
+                object obj = ResourceManager.GetObject("northbay_event_picture", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

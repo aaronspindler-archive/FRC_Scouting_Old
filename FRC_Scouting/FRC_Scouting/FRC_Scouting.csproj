@@ -181,6 +181,7 @@
     <Content Include="bin\Release\ScoutingFormBase.pdb" />
     <Content Include="FRC_Logo_ICO.ico" />
     <Content Include="Information &amp; Planning\To-Do.txt" />
+    <None Include="Resources\northbay_event_picture.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\General Form\GeneralForm.csproj">

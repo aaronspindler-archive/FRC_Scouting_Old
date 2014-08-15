@@ -9,5 +9,9 @@ namespace FRC_Scouting
         {
             InitializeComponent();
         }
+
+        private void AerialAssist_NorthBay_Event_Information_Load(object sender, System.EventArgs e)
+        {
+        }
     }
 }
