@@ -40,128 +40,78 @@ namespace FRC_Scouting
 
         public void UpdateSponsor()
         {
-            if (randomNum == 0)
+            switch (randomNum)
             {
-                sponsorPictureBox.Image = Properties.Resources.astowing_inkind_northbay;
-                sponsorName = ("");
-                sponsorLevel = ("");
-            }
-            else
-            {
-                if (randomNum == 1)
-                {
+                case 0:
                     sponsorPictureBox.Image = Properties.Resources.astowing_inkind_northbay;
                     sponsorName = ("");
                     sponsorLevel = ("");
-                }
-                else
-                {
-                    if (randomNum == 2)
-                    {
-                        sponsorPictureBox.Image = Properties.Resources.astowing_inkind_northbay;
-                        sponsorName = ("");
-                        sponsorLevel = ("");
-                    }
-                    else
-                    {
-                        if (randomNum == 3)
-                        {
-                            sponsorPictureBox.Image = Properties.Resources.astowing_inkind_northbay;
-                            sponsorName = ("");
-                            sponsorLevel = ("");
-                        }
-                        else
-                        {
-                            if (randomNum == 4)
-                            {
-                                sponsorPictureBox.Image = Properties.Resources.astowing_inkind_northbay;
-                                sponsorName = ("");
-                                sponsorLevel = ("");
-                            }
-                            else
-                            {
-                                if (randomNum == 5)
-                                {
-                                    sponsorPictureBox.Image = Properties.Resources.astowing_inkind_northbay;
-                                    sponsorName = ("");
-                                    sponsorLevel = ("");
-                                }
-                                else
-                                {
-                                    if (randomNum == 6)
-                                    {
-                                        sponsorPictureBox.Image = Properties.Resources.astowing_inkind_northbay;
-                                        sponsorName = ("");
-                                        sponsorLevel = ("");
-                                    }
-                                    else
-                                    {
-                                        if (randomNum == 7)
-                                        {
-                                            sponsorPictureBox.Image = Properties.Resources.astowing_inkind_northbay;
-                                            sponsorName = ("");
-                                            sponsorLevel = ("");
-                                        }
-                                        else
-                                        {
-                                            if (randomNum == 8)
-                                            {
-                                                sponsorPictureBox.Image = Properties.Resources.astowing_inkind_northbay;
-                                                sponsorName = ("");
-                                                sponsorLevel = ("");
-                                            }
-                                            else
-                                            {
-                                                if (randomNum == 9)
-                                                {
-                                                    sponsorPictureBox.Image = Properties.Resources.astowing_inkind_northbay;
-                                                    sponsorName = ("");
-                                                    sponsorLevel = ("");
-                                                }
-                                                else
-                                                {
-                                                    if (randomNum == 10)
-                                                    {
-                                                        sponsorPictureBox.Image = Properties.Resources.astowing_inkind_northbay;
-                                                        sponsorName = ("");
-                                                        sponsorLevel = ("");
-                                                    }
-                                                    else
-                                                    {
-                                                        if (randomNum == 11)
-                                                        {
-                                                            sponsorPictureBox.Image = Properties.Resources.astowing_inkind_northbay;
-                                                            sponsorName = ("");
-                                                            sponsorLevel = ("");
-                                                        }
-                                                        else
-                                                        {
-                                                            if (randomNum == 12)
-                                                            {
-                                                                sponsorPictureBox.Image = Properties.Resources.astowing_inkind_northbay;
-                                                                sponsorName = ("");
-                                                                sponsorLevel = ("");
-                                                            }
-                                                            else
-                                                            {
-                                                                if (randomNum == 13)
-                                                                {
-                                                                    sponsorPictureBox.Image = Properties.Resources.astowing_inkind_northbay;
-                                                                    sponsorName = ("");
-                                                                    sponsorLevel = ("");
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
+                    break;
+                case 1:
+                    sponsorPictureBox.Image = Properties.Resources.astowing_inkind_northbay;
+                    sponsorName = ("");
+                    sponsorLevel = ("");
+                    break;
+                case 2:
+                    sponsorPictureBox.Image = Properties.Resources.astowing_inkind_northbay;
+                    sponsorName = ("");
+                    sponsorLevel = ("");
+                    break;
+                case 3:
+                    sponsorPictureBox.Image = Properties.Resources.astowing_inkind_northbay;
+                    sponsorName = ("");
+                    sponsorLevel = ("");
+                    break;
+                case 4:
+                    sponsorPictureBox.Image = Properties.Resources.astowing_inkind_northbay;
+                    sponsorName = ("");
+                    sponsorLevel = ("");
+                    break;
+                case 5:
+                    sponsorPictureBox.Image = Properties.Resources.astowing_inkind_northbay;
+                    sponsorName = ("");
+                    sponsorLevel = ("");
+                    break;
+                case 6:
+                    sponsorPictureBox.Image = Properties.Resources.astowing_inkind_northbay;
+                    sponsorName = ("");
+                    sponsorLevel = ("");
+                    break;
+                case 7:
+                    sponsorPictureBox.Image = Properties.Resources.astowing_inkind_northbay;
+                    sponsorName = ("");
+                    sponsorLevel = ("");
+                    break;
+                case 8:
+                    sponsorPictureBox.Image = Properties.Resources.astowing_inkind_northbay;
+                    sponsorName = ("");
+                    sponsorLevel = ("");
+                    break;
+                case 9:
+                    sponsorPictureBox.Image = Properties.Resources.astowing_inkind_northbay;
+                    sponsorName = ("");
+                    sponsorLevel = ("");
+                    break;
+                case 10:
+                    sponsorPictureBox.Image = Properties.Resources.astowing_inkind_northbay;
+                    sponsorName = ("");
+                    sponsorLevel = ("");
+                    break;
+                case 11:
+                    sponsorPictureBox.Image = Properties.Resources.astowing_inkind_northbay;
+                    sponsorName = ("");
+                    sponsorLevel = ("");
+                    break;
+                case 12:
+                    sponsorPictureBox.Image = Properties.Resources.astowing_inkind_northbay;
+                    sponsorName = ("");
+                    sponsorLevel = ("");
+                    break;
+                case 13:
+                    sponsorPictureBox.Image = Properties.Resources.astowing_inkind_northbay;
+                    sponsorName = ("");
+                    sponsorLevel = ("");
+                    break;
             }
         }
     }
