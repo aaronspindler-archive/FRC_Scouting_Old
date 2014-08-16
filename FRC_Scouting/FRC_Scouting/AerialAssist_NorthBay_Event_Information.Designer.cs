@@ -34,21 +34,21 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.eventDescriptionPage = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.eventInfoPictureBox = new System.Windows.Forms.PictureBox();
+            this.eventInformationLabel = new System.Windows.Forms.Label();
             this.eventSponsorsPage = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.eventInformationLabel = new System.Windows.Forms.Label();
+            this.sponsorPictureBox = new System.Windows.Forms.PictureBox();
             this.sponsorLevelLabel = new System.Windows.Forms.Label();
             this.sponsorNameLabel = new System.Windows.Forms.Label();
             this.timer = new System.Windows.Forms.Timer(this.components);
-            this.eventInfoPictureBox = new System.Windows.Forms.PictureBox();
-            this.sponsorPictureBox = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel2.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.eventDescriptionPage.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.eventInfoPictureBox)).BeginInit();
             this.eventSponsorsPage.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.eventInfoPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sponsorPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -131,6 +131,33 @@
             this.tableLayoutPanel3.Size = new System.Drawing.Size(473, 291);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
+            // eventInfoPictureBox
+            // 
+            this.tableLayoutPanel3.SetColumnSpan(this.eventInfoPictureBox, 8);
+            this.eventInfoPictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.eventInfoPictureBox.Image = global::FRC_Scouting.Properties.Resources.northbay_event_picture;
+            this.eventInfoPictureBox.Location = new System.Drawing.Point(3, 3);
+            this.eventInfoPictureBox.Name = "eventInfoPictureBox";
+            this.tableLayoutPanel3.SetRowSpan(this.eventInfoPictureBox, 5);
+            this.eventInfoPictureBox.Size = new System.Drawing.Size(467, 174);
+            this.eventInfoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.eventInfoPictureBox.TabIndex = 1;
+            this.eventInfoPictureBox.TabStop = false;
+            // 
+            // eventInformationLabel
+            // 
+            this.eventInformationLabel.AutoSize = true;
+            this.tableLayoutPanel3.SetColumnSpan(this.eventInformationLabel, 8);
+            this.eventInformationLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.eventInformationLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.eventInformationLabel.Location = new System.Drawing.Point(3, 180);
+            this.eventInformationLabel.Name = "eventInformationLabel";
+            this.tableLayoutPanel3.SetRowSpan(this.eventInformationLabel, 3);
+            this.eventInformationLabel.Size = new System.Drawing.Size(467, 111);
+            this.eventInformationLabel.TabIndex = 2;
+            this.eventInformationLabel.Text = resources.GetString("eventInformationLabel.Text");
+            this.eventInformationLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // eventSponsorsPage
             // 
             this.eventSponsorsPage.Controls.Add(this.tableLayoutPanel4);
@@ -171,25 +198,24 @@
             this.tableLayoutPanel4.Size = new System.Drawing.Size(473, 291);
             this.tableLayoutPanel4.TabIndex = 1;
             // 
-            // eventInformationLabel
+            // sponsorPictureBox
             // 
-            this.eventInformationLabel.AutoSize = true;
-            this.tableLayoutPanel3.SetColumnSpan(this.eventInformationLabel, 8);
-            this.eventInformationLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.eventInformationLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.eventInformationLabel.Location = new System.Drawing.Point(3, 180);
-            this.eventInformationLabel.Name = "eventInformationLabel";
-            this.tableLayoutPanel3.SetRowSpan(this.eventInformationLabel, 3);
-            this.eventInformationLabel.Size = new System.Drawing.Size(467, 111);
-            this.eventInformationLabel.TabIndex = 2;
-            this.eventInformationLabel.Text = resources.GetString("eventInformationLabel.Text");
-            this.eventInformationLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tableLayoutPanel4.SetColumnSpan(this.sponsorPictureBox, 8);
+            this.sponsorPictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.sponsorPictureBox.Location = new System.Drawing.Point(3, 39);
+            this.sponsorPictureBox.Name = "sponsorPictureBox";
+            this.tableLayoutPanel4.SetRowSpan(this.sponsorPictureBox, 5);
+            this.sponsorPictureBox.Size = new System.Drawing.Size(467, 174);
+            this.sponsorPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.sponsorPictureBox.TabIndex = 2;
+            this.sponsorPictureBox.TabStop = false;
             // 
             // sponsorLevelLabel
             // 
             this.sponsorLevelLabel.AutoSize = true;
             this.tableLayoutPanel4.SetColumnSpan(this.sponsorLevelLabel, 8);
             this.sponsorLevelLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.sponsorLevelLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sponsorLevelLabel.Location = new System.Drawing.Point(3, 0);
             this.sponsorLevelLabel.Name = "sponsorLevelLabel";
             this.sponsorLevelLabel.Size = new System.Drawing.Size(467, 36);
@@ -202,6 +228,7 @@
             this.sponsorNameLabel.AutoSize = true;
             this.tableLayoutPanel4.SetColumnSpan(this.sponsorNameLabel, 8);
             this.sponsorNameLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.sponsorNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sponsorNameLabel.Location = new System.Drawing.Point(3, 216);
             this.sponsorNameLabel.Name = "sponsorNameLabel";
             this.tableLayoutPanel4.SetRowSpan(this.sponsorNameLabel, 2);
@@ -212,33 +239,8 @@
             // 
             // timer
             // 
-            this.timer.Interval = 10000;
+            this.timer.Interval = 5000;
             this.timer.Tick += new System.EventHandler(this.timer_Tick);
-            // 
-            // eventInfoPictureBox
-            // 
-            this.tableLayoutPanel3.SetColumnSpan(this.eventInfoPictureBox, 8);
-            this.eventInfoPictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.eventInfoPictureBox.Image = global::FRC_Scouting.Properties.Resources.northbay_event_picture;
-            this.eventInfoPictureBox.Location = new System.Drawing.Point(3, 3);
-            this.eventInfoPictureBox.Name = "eventInfoPictureBox";
-            this.tableLayoutPanel3.SetRowSpan(this.eventInfoPictureBox, 5);
-            this.eventInfoPictureBox.Size = new System.Drawing.Size(467, 174);
-            this.eventInfoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.eventInfoPictureBox.TabIndex = 1;
-            this.eventInfoPictureBox.TabStop = false;
-            // 
-            // sponsorPictureBox
-            // 
-            this.tableLayoutPanel4.SetColumnSpan(this.sponsorPictureBox, 8);
-            this.sponsorPictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.sponsorPictureBox.Location = new System.Drawing.Point(3, 39);
-            this.sponsorPictureBox.Name = "sponsorPictureBox";
-            this.tableLayoutPanel4.SetRowSpan(this.sponsorPictureBox, 5);
-            this.sponsorPictureBox.Size = new System.Drawing.Size(467, 174);
-            this.sponsorPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.sponsorPictureBox.TabIndex = 2;
-            this.sponsorPictureBox.TabStop = false;
             // 
             // AerialAssist_NorthBay_Event_Information
             // 
@@ -254,10 +256,10 @@
             this.eventDescriptionPage.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.eventInfoPictureBox)).EndInit();
             this.eventSponsorsPage.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.eventInfoPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sponsorPictureBox)).EndInit();
             this.ResumeLayout(false);
 
