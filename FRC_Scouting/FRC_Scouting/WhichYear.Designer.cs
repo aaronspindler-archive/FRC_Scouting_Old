@@ -40,10 +40,10 @@
             this.changelogToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.licenseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.programInformationToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.teamDirectoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.debugToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.resetAllSettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.teamDirectoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayout.SuspendLayout();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
@@ -65,7 +65,7 @@
             this.tableLayout.Controls.Add(this.menuStrip, 0, 0);
             this.tableLayout.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayout.Location = new System.Drawing.Point(0, 0);
-            this.tableLayout.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayout.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayout.Name = "tableLayout";
             this.tableLayout.RowCount = 4;
             this.tableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
@@ -83,7 +83,7 @@
             this.whichYearComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.whichYearComboBox.FormattingEnabled = true;
             this.whichYearComboBox.Location = new System.Drawing.Point(2, 50);
-            this.whichYearComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.whichYearComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.whichYearComboBox.Name = "whichYearComboBox";
             this.whichYearComboBox.Size = new System.Drawing.Size(440, 21);
             this.whichYearComboBox.TabIndex = 1;
@@ -108,7 +108,7 @@
             this.tableLayout.SetColumnSpan(this.confirmSelectionButton, 4);
             this.confirmSelectionButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.confirmSelectionButton.Location = new System.Drawing.Point(112, 74);
-            this.confirmSelectionButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.confirmSelectionButton.Margin = new System.Windows.Forms.Padding(2);
             this.confirmSelectionButton.Name = "confirmSelectionButton";
             this.confirmSelectionButton.Size = new System.Drawing.Size(216, 20);
             this.confirmSelectionButton.TabIndex = 2;
@@ -180,6 +180,13 @@
             this.programInformationToolStripMenuItem1.Text = "Program Information";
             this.programInformationToolStripMenuItem1.Click += new System.EventHandler(this.programInformationToolStripMenuItem1_Click);
             // 
+            // teamDirectoryToolStripMenuItem
+            // 
+            this.teamDirectoryToolStripMenuItem.Name = "teamDirectoryToolStripMenuItem";
+            this.teamDirectoryToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
+            this.teamDirectoryToolStripMenuItem.Text = "Team Directory";
+            this.teamDirectoryToolStripMenuItem.Click += new System.EventHandler(this.teamDirectoryToolStripMenuItem_Click);
+            // 
             // debugToolStripMenuItem
             // 
             this.debugToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -191,8 +198,8 @@
             // resetAllSettingsToolStripMenuItem
             // 
             this.resetAllSettingsToolStripMenuItem.Name = "resetAllSettingsToolStripMenuItem";
-            this.resetAllSettingsToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
-            this.resetAllSettingsToolStripMenuItem.Text = "Reset all Settings";
+            this.resetAllSettingsToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
+            this.resetAllSettingsToolStripMenuItem.Text = "Reset All Settings to Default";
             this.resetAllSettingsToolStripMenuItem.Click += new System.EventHandler(this.resetAllSettingsToolStripMenuItem_Click);
             // 
             // settingsToolStripMenuItem
@@ -201,13 +208,6 @@
             this.settingsToolStripMenuItem.Size = new System.Drawing.Size(61, 22);
             this.settingsToolStripMenuItem.Text = "Settings";
             this.settingsToolStripMenuItem.Click += new System.EventHandler(this.settingsToolStripMenuItem_Click);
-            // 
-            // teamDirectoryToolStripMenuItem
-            // 
-            this.teamDirectoryToolStripMenuItem.Name = "teamDirectoryToolStripMenuItem";
-            this.teamDirectoryToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
-            this.teamDirectoryToolStripMenuItem.Text = "Team Directory";
-            this.teamDirectoryToolStripMenuItem.Click += new System.EventHandler(this.teamDirectoryToolStripMenuItem_Click);
             // 
             // WhichYear
             // 
@@ -218,7 +218,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "WhichYear";
             this.Text = "FRC Scouting by xNovax";
