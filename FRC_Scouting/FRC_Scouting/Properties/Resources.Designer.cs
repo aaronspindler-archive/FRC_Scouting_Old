@@ -63,9 +63,149 @@ namespace FRC_Scouting.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap astowing_inkind_northbay {
+            get {
+                object obj = ResourceManager.GetObject("astowing_inkind_northbay", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap atlascopco_gold_northbay {
+            get {
+                object obj = ResourceManager.GetObject("atlascopco_gold_northbay", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap canadore_silver_northbay {
+            get {
+                object obj = ResourceManager.GetObject("canadore_silver_northbay", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fednor_platinum_northbay {
+            get {
+                object obj = ResourceManager.GetObject("fednor_platinum_northbay", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap forbetteorforworse_silver_northbay {
+            get {
+                object obj = ResourceManager.GetObject("forbetteorforworse_silver_northbay", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap metso_inkind_northbay {
+            get {
+                object obj = ResourceManager.GetObject("metso_inkind_northbay", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap nearnorth_strategicpartner_northbay {
+            get {
+                object obj = ResourceManager.GetObject("nearnorth_strategicpartner_northbay", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap nipu_platinum_northbay {
+            get {
+                object obj = ResourceManager.GetObject("nipu_platinum_northbay", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap north_bay_strategicpartner_northbay {
+            get {
+                object obj = ResourceManager.GetObject("north_bay_strategicpartner_northbay", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap northbay_event_picture {
             get {
                 object obj = ResourceManager.GetObject("northbay_event_picture", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ontario_silver_northbay {
+            get {
+                object obj = ResourceManager.GetObject("ontario_silver_northbay", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap redpath_platinum_northbay {
+            get {
+                object obj = ResourceManager.GetObject("redpath_platinum_northbay", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sms_inkind_northbay {
+            get {
+                object obj = ResourceManager.GetObject("sms_inkind_northbay", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap stantec_bronze_northbay {
+            get {
+                object obj = ResourceManager.GetObject("stantec_bronze_northbay", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap twg_gold_northbay {
+            get {
+                object obj = ResourceManager.GetObject("twg_gold_northbay", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

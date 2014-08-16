@@ -181,6 +181,20 @@
     <Content Include="bin\Release\ScoutingFormBase.pdb" />
     <Content Include="FRC_Logo_ICO.ico" />
     <Content Include="Information &amp; Planning\To-Do.txt" />
+    <None Include="Resources\sms_inkind_northbay.jpg" />
+    <None Include="Resources\astowing_inkind_northbay.jpg" />
+    <None Include="Resources\metso_inkind_northbay.png" />
+    <None Include="Resources\nearnorth_strategicpartner_northbay.png" />
+    <None Include="Resources\north_bay_strategicpartner_northbay.png" />
+    <None Include="Resources\stantec_bronze_northbay.png" />
+    <None Include="Resources\canadore_silver_northbay.jpg" />
+    <None Include="Resources\forbetteorforworse_silver_northbay.png" />
+    <None Include="Resources\ontario_silver_northbay.jpg" />
+    <None Include="Resources\twg_gold_northbay.png" />
+    <None Include="Resources\atlascopco_gold_northbay.png" />
+    <None Include="Resources\nipu_platinum_northbay.gif" />
+    <None Include="Resources\redpath_platinum_northbay.gif" />
+    <None Include="Resources\fednor_platinum_northbay.jpg" />
     <None Include="Resources\northbay_event_picture.png" />
   </ItemGroup>
   <ItemGroup>
