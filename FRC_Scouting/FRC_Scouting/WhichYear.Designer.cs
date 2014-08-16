@@ -221,7 +221,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "WhichYear";
-            this.Text = "FRC Scouting by xNovax";
+            this.Text = "FRC Scouting by xNovax @ FRC3710";
             this.Load += new System.EventHandler(this.WhichYear_Load);
             this.tableLayout.ResumeLayout(false);
             this.tableLayout.PerformLayout();
