@@ -11,13 +11,17 @@ namespace FRC_Scouting
             InitializeComponent();
         }
         Random gen = new Random();
-        private int randomNum;
+        private int randomNum = 100;
         private int previousNum;
         private string sponsorName;
         private string sponsorLevel;
 
         private void AerialAssist_NorthBay_Event_Information_Load(object sender, System.EventArgs e)
         {
+            randomNum = gen.Next(13);
+            previousNum = randomNum;
+            UpdateSponsor();
+
             timer.Tick += timer_Tick;
             timer.Start();
         }
@@ -113,6 +117,8 @@ namespace FRC_Scouting
                     sponsorLevel = ("");
                     break;
             }
+            sponsorLevelLabel.Text = ("Sponsor Level: " + sponsorLevel);
+            sponsorNameLabel.Text = ("Sponsor Name: " + sponsorName);
         }
     }
 }
